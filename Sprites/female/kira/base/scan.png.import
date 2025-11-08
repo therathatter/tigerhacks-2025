@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vpnm70tv4p7f"
-path="res://.godot/imported/scan.png-3457caac855f8945f24eb3bc24cfe7ce.ctex"
+path="res://.godot/imported/scan.png-da0ec43bacc44bd9c2f60b604cc27de9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/kira/base/scan.png"
-dest_files=["res://.godot/imported/scan.png-3457caac855f8945f24eb3bc24cfe7ce.ctex"]
+source_file="res://sprites/female/kira/base/scan.png"
+dest_files=["res://.godot/imported/scan.png-da0ec43bacc44bd9c2f60b604cc27de9.ctex"]
 
 [params]
 

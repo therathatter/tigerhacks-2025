@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd2afjp5wgjpu"
-path="res://.godot/imported/bar_square_gloss_large_square.svg-01f86e38595dfeceb59d96ab4d8b72c4.ctex"
+path="res://.godot/imported/bar_square_gloss_large_square.svg-c40b09d7f235be2de922afc7d85414f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ui_svgs/red/bar_square_gloss_large_square.svg"
-dest_files=["res://.godot/imported/bar_square_gloss_large_square.svg-01f86e38595dfeceb59d96ab4d8b72c4.ctex"]
+source_file="res://sprites/ui_svgs/red/bar_square_gloss_large_square.svg"
+dest_files=["res://.godot/imported/bar_square_gloss_large_square.svg-c40b09d7f235be2de922afc7d85414f2.ctex"]
 
 [params]
 
@@ -38,6 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
+svg/scale=4.0
 editor/scale_with_editor_scale=false
 editor/convert_colors_with_editor_theme=false
