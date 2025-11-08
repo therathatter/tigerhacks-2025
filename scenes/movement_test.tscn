@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsw43p71ridlf"]
+
+[ext_resource type="PackedScene" uid="uid://bay62e5awu436" path="res://scenes/Animated_Sprites/Cole.tscn" id="1_nyyim"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nyyim"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cole" parent="." instance=ExtResource("1_nyyim")]
+position = Vector2(0.99999994, -60.999996)
+scale = Vector2(5, 5)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_nyyim")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -15)
