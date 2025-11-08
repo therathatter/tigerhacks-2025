@@ -1,12 +1,15 @@
-[gd_scene load_steps=17 format=4 uid="uid://bkt373fy3qqif"]
+[gd_scene load_steps=18 format=3 uid="uid://bkt373fy3qqif"]
 
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="2_hpxl2"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="3_fem2g"]
 [ext_resource type="Texture2D" uid="uid://3rfqk6as4u01" path="res://Terrain/world_tileset.png" id="3_hpxl2"]
+[ext_resource type="Texture2D" uid="uid://ddk52xrt41th7" path="res://Terrain/parallax/2.png" id="3_vlwwk"]
 [ext_resource type="PackedScene" uid="uid://dioqqf824b1ie" path="res://scenes/kick_charge.tscn" id="4_3vde5"]
 [ext_resource type="Texture2D" uid="uid://ly8kh6dtbigw" path="res://Terrain/Sprite sheet.png" id="5_31kg2"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="5_hpxl2"]
+[ext_resource type="Texture2D" uid="uid://bqjpyba2oq12l" path="res://Terrain/parallax/4.png" id="5_jjf0l"]
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="6_fem2g"]
+[ext_resource type="Texture2D" uid="uid://dglowj3h3glkp" path="res://Terrain/parallax/1.png" id="7_31kg2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hpxl2"]
 texture = ExtResource("3_hpxl2")
@@ -2848,9 +2851,38 @@ texture = ExtResource("3_hpxl2")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fem2g")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w40hx"]
+
 [node name="TutorialLevel" type="Node2D"]
 
 [node name="SpaceBackground" parent="." instance=ExtResource("6_fem2g")]
+
+[node name="InnerBackground" type="PanelContainer" parent="."]
+clip_contents = true
+offset_left = -80.0
+offset_top = -80.0
+offset_right = 80.0
+offset_bottom = 80.0
+
+[node name="Clouds" type="Sprite2D" parent="InnerBackground"]
+position = Vector2(16, 16)
+texture = ExtResource("7_31kg2")
+region_rect = Rect2(0, 0, 1024, 400)
+
+[node name="Grass" type="Sprite2D" parent="InnerBackground"]
+position = Vector2(32, 32)
+texture = ExtResource("3_vlwwk")
+region_rect = Rect2(0, 0, 1024, 400)
+
+[node name="Grass2" type="Sprite2D" parent="InnerBackground"]
+position = Vector2(64, 64)
+texture = ExtResource("4_qc43e")
+region_rect = Rect2(0, 0, 1024, 400)
+
+[node name="Water" type="Sprite2D" parent="InnerBackground"]
+position = Vector2(128, 128)
+texture = ExtResource("5_jjf0l")
+region_rect = Rect2(0, 0, 1024, 400)
 
 [node name="MapsController" type="Node2D" parent="."]
 script = ExtResource("2_hpxl2")
@@ -2864,13 +2896,11 @@ script = ExtResource("3_fem2g")
 metadata/_custom_type_script = "uid://sbxyh02fty1g"
 
 [node name="TileMapLayer" type="TileMapLayer" parent="TilemapsContainer"]
-visible = false
 position = Vector2(32, 32)
 tile_map_data = PackedByteArray("AAD/////AAABAAAAAAAAAP//AAABAAAAAAAAAAAAAAABAAAAAAD//wAAAAABAAAAAAA=")
 tile_set = SubResource("TileSet_fem2g")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="TilemapsContainer"]
-visible = false
 position = Vector2(-32, -32)
 tile_map_data = PackedByteArray("AAD/////AAAAAAIAAAD//wAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAP//AAAAAAIAAAA=")
 tile_set = SubResource("TileSet_6s1ea")
@@ -2882,7 +2912,6 @@ tile_map_data = PackedByteArray("AAD/////AAAsADgAAAA=")
 tile_set = SubResource("TileSet_w40hx")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-visible = false
 position = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
