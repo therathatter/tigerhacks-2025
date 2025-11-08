@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mrxfy86bmldm"
-path="res://.godot/imported/2024-12-12T19_16_37.png-12df6b9e5881de30fa735e823b1ab331.ctex"
+uid="uid://cbresunfoc2c"
+path="res://.godot/imported/bar_round_gloss_small_l.svg-a601fa47c41e3f017bc0a10184c1e33f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://space_backgrounds/2024-12-12T19_16_37.png"
-dest_files=["res://.godot/imported/2024-12-12T19_16_37.png-12df6b9e5881de30fa735e823b1ab331.ctex"]
+source_file="res://svg/Grey/bar_round_gloss_small_l.svg"
+dest_files=["res://.godot/imported/bar_round_gloss_small_l.svg-a601fa47c41e3f017bc0a10184c1e33f.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
