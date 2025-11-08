@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://6qrn1rug77p7"
+=======
+uid="uid://bt4bnc00ivkx7"
+>>>>>>> b75a25b83fd8c7b081a82af50262ef999232ef61
 path="res://.godot/imported/DarkHouseTiles.png-7e3d3131789fd208a33217bf97d3e177.ctex"
 metadata={
 "vram_texture": false

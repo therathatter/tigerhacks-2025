@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dioqqf824b1ie"]
+
+[ext_resource type="Script" uid="uid://d25pw0xsxxb7l" path="res://scenes/kick_charge.gd" id="1_4opoe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0uwj6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4opoe"]
+bg_color = Color(1, 0.3409329, 0.29689893, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nhfv1"]
+bg_color = Color(0.03839716, 0.038397174, 0.038397126, 1)
+
+[node name="KickCharge" type="ProgressBar"]
+offset_left = -6.9999995
+offset_top = -81.0
+offset_right = -2.9999995
+offset_bottom = -54.0
+scale = Vector2(5, 5)
+theme_override_styles/background = SubResource("StyleBoxEmpty_0uwj6")
+theme_override_styles/fill = SubResource("StyleBoxFlat_4opoe")
+value = 50.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("1_4opoe")
+
+[node name="BackgroundBar" type="ProgressBar" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+theme_override_styles/background = SubResource("StyleBoxFlat_nhfv1")
+value = 100.0
+show_percentage = false

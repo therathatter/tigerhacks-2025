@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c3cygvq1vsh8g"
+=======
+uid="uid://df1ua8flco4ow"
+>>>>>>> b75a25b83fd8c7b081a82af50262ef999232ef61
 path="res://.godot/imported/Mossy - Hanging Plants.png-2df1495838eae773d71c354a8aa30027.ctex"
 metadata={
 "vram_texture": false

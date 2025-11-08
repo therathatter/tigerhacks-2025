@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c1oesibvudtr3"
+=======
+uid="uid://c7qllrx8ksw5f"
+>>>>>>> b75a25b83fd8c7b081a82af50262ef999232ef61
 path="res://.godot/imported/Mossy - TileSet.png-68a4b50e33457aa76ee22d91fda30d4b.ctex"
 metadata={
 "vram_texture": false
