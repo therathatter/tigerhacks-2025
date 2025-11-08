@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://3rfqk6as4u01" path="res://Terrain/world_tileset.png" id="1_06fst"]
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_7lpbs"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="2_bnl4j"]
-[ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="3_ql4ic"]
-[ext_resource type="Texture2D" uid="uid://b0qnlijeky2yv" path="res://Terrain/white 2.png" id="4_bx2em"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_ql4ic"]
+[ext_resource type="Texture2D" uid="uid://c7qllrx8ksw5f" path="res://Terrain/Mossy - TileSet.png" id="4_bx2em"]
 [ext_resource type="PackedScene" uid="uid://bkt373fy3qqif" path="res://scenes/tutorial_level.tscn" id="6_uc8qs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oycnh"]
