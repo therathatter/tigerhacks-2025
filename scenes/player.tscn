@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+[gd_scene load_steps=0 format=3 uid="uid://bbbiwhv6ejw4r"]
+=======
 [gd_scene load_steps=2 format=3 uid="uid://ftywjr8fuk37"]
 
 [ext_resource type="PackedScene" uid="uid://bay62e5awu436" path="res://scenes/Animated_Sprites/Cole.tscn" id="1_3vyb7"]
+>>>>>>> 3a6c581e11e250c53d2b64842c171763c79912df
 
 [node name="Player" type="Node2D"]
 

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://c5wu8qnwpy0ju"
+path="res://.godot/imported/black_hole.glsl-7aa9203cefedc269a13dfd197fe0d0dd.res"
+
+[deps]
+
+source_file="res://shaders/black_hole.glsl"
+dest_files=["res://.godot/imported/black_hole.glsl-7aa9203cefedc269a13dfd197fe0d0dd.res"]
+
+[params]
+

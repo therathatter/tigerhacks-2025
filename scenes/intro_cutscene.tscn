@@ -1,0 +1,115 @@
+[gd_scene load_steps=11 format=3 uid="uid://crxpmuyasnygl"]
+
+[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="1_xeku4"]
+[ext_resource type="Shader" uid="uid://craq5doo4k1fc" path="res://shaders/blackhole.gdshader" id="2_3438a"]
+[ext_resource type="Texture2D" uid="uid://c3nfhl24gpj6" path="res://sprites/backgrounds/blackhole.png" id="4_wifpd"]
+[ext_resource type="Script" uid="uid://b4tvinov2xk4b" path="res://scenes/blackhole.gd" id="5_dw6o5"]
+[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="6_jusdg"]
+[ext_resource type="Script" uid="uid://8k3afthshy8k" path="res://scenes/texture_rect.gd" id="7_dcu1r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dw6o5"]
+shader = ExtResource("2_3438a")
+shader_parameter/shaking = true
+shader_parameter/amplitude = 7.98
+shader_parameter/noise_scale = -4.7
+shader_parameter/noise_speed = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on3y1"]
+atlas = ExtResource("6_jusdg")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="Animation" id="Animation_bprnf"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cole")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"startMoving"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pbanw"]
+_data = {
+&"RESET": SubResource("Animation_bprnf")
+}
+
+[node name="IntroCutscene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_offset = Vector2(1024, 1024)
+repeat_size = Vector2(1024, 1024)
+autoscroll = Vector2(-48, -32)
+repeat_times = 16
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("1_xeku4")
+
+[node name="Blackhole" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_dw6o5")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.76465225
+anchor_top = 0.31320027
+anchor_right = 0.98570144
+anchor_bottom = 0.6936014
+offset_left = -184.87933
+offset_top = -178.95374
+offset_right = 185.47192
+offset_bottom = 179.54626
+scale = Vector2(0.407438, 0.407438)
+pivot_offset = Vector2(312, 302)
+texture = ExtResource("4_wifpd")
+script = ExtResource("5_dw6o5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cole" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.22222222
+anchor_top = 0.34567901
+anchor_right = -0.11111111
+anchor_bottom = 0.5432099
+pivot_offset = Vector2(64, 64)
+texture = SubResource("AtlasTexture_on3y1")
+script = ExtResource("7_dcu1r")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_pbanw")
+}
+autoplay = "RESET"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

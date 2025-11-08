@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7rwyukpnqlli"
-path="res://.godot/imported/button_square_header_notch_square.svg-f73246e34af7a033e7c777ddf3b0931f.ctex"
+path="res://.godot/imported/button_square_header_notch_square.svg-195b041eeb887670775acae70277684f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ui_svgs/yellow/button_square_header_notch_square.svg"
-dest_files=["res://.godot/imported/button_square_header_notch_square.svg-f73246e34af7a033e7c777ddf3b0931f.ctex"]
+source_file="res://sprites/ui_svgs/yellow/button_square_header_notch_square.svg"
+dest_files=["res://.godot/imported/button_square_header_notch_square.svg-195b041eeb887670775acae70277684f.ctex"]
 
 [params]
 
