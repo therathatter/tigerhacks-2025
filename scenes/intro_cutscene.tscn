@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://crxpmuyasnygl"]
 
-[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="1_xeku4"]
+[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://Sprites/backgrounds/background2.png" id="1_xeku4"]
 [ext_resource type="Shader" uid="uid://craq5doo4k1fc" path="res://shaders/blackhole.gdshader" id="2_3438a"]
-[ext_resource type="Texture2D" uid="uid://c3nfhl24gpj6" path="res://sprites/backgrounds/blackhole.png" id="4_wifpd"]
-[ext_resource type="Script" uid="uid://b4tvinov2xk4b" path="res://scenes/blackhole.gd" id="5_dw6o5"]
-[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="6_jusdg"]
-[ext_resource type="Script" uid="uid://8k3afthshy8k" path="res://scenes/texture_rect.gd" id="7_dcu1r"]
+[ext_resource type="Texture2D" uid="uid://c3nfhl24gpj6" path="res://Sprites/backgrounds/blackhole.png" id="4_wifpd"]
+[ext_resource type="Script" uid="uid://b4tvinov2xk4b" path="res://scripts/blackhole.gd" id="5_dw6o5"]
+[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://Sprites/male/cole/base/dead.png" id="6_jusdg"]
+[ext_resource type="Script" uid="uid://8k3afthshy8k" path="res://scripts/texture_rect.gd" id="7_dcu1r"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dw6o5"]
 shader = ExtResource("2_3438a")

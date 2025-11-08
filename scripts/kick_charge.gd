@@ -1,5 +1,5 @@
 extends ProgressBar
-
+class_name KickCharge
 
 var charging = false
 var dt_charge = 0.0
@@ -17,11 +17,13 @@ func _process(delta: float) -> void:
 		#handle kick
 		charging = false
 		#now we have dt_charge to represent how strong the kick was
-		print(dt_charge)
-		dt_charge = 0 #reset charge
 	if charging:
 		dt_charge += delta
 		if dt_charge > 1.0:
 			dt_charge = 1.0
-		self.value = dt_charge * 100
+	else:
+		if dt_charge:
+			dt_charge = move_toward(dt_charge, 0, delta)
+		
+	self.value = dt_charge * 100
 		

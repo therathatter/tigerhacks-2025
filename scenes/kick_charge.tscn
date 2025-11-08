@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dioqqf824b1ie"]
 
-[ext_resource type="Script" uid="uid://d25pw0xsxxb7l" path="res://scenes/kick_charge.gd" id="1_4opoe"]
+[ext_resource type="Script" uid="uid://d25pw0xsxxb7l" path="res://scripts/kick_charge.gd" id="1_4opoe"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0uwj6"]
 
