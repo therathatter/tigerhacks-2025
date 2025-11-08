@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=3 uid="uid://d38m38utb5syh"]
+
+[ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="2_3xoar"]
+[ext_resource type="Script" uid="uid://45dv4micba66" path="res://scripts/exit_button.gd" id="2_oyqm6"]
+[ext_resource type="StyleBox" uid="uid://dg2twv87i3gf" path="res://theme/button.tres" id="3_mom7w"]
+[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="6_0824t"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7lgly"]
+
+[sub_resource type="FontVariation" id="FontVariation_3xoar"]
+base_font = ExtResource("2_3xoar")
+baseline_offset = 0.2
+
+[sub_resource type="Theme" id="Theme_7lgly"]
+Button/colors/font_color = Color(0.092397265, 0.09239698, 0.09239704, 1)
+Button/colors/font_focus_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+Button/colors/font_hover_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+Button/colors/font_hover_pressed_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+Button/colors/font_pressed_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 32
+Button/fonts/font = SubResource("FontVariation_3xoar")
+Button/styles/disabled = ExtResource("3_mom7w")
+Button/styles/focus = ExtResource("3_mom7w")
+Button/styles/hover = ExtResource("3_mom7w")
+Button/styles/normal = ExtResource("3_mom7w")
+Button/styles/pressed = ExtResource("3_mom7w")
+
+[node name="Control" type="Control"]
+texture_repeat = 2
+material = SubResource("CanvasItemMaterial_7lgly")
+use_parent_material = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_offset = Vector2(1024, 1024)
+repeat_size = Vector2(1024, 1024)
+autoscroll = Vector2(-48, -32)
+repeat_times = 16
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("6_0824t")
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6805556
+anchor_top = 0.70987654
+anchor_right = 0.9305556
+anchor_bottom = 0.86419755
+grow_horizontal = 0
+grow_vertical = 0
+theme = SubResource("Theme_7lgly")
+text = "Quit"
+script = ExtResource("2_oyqm6")
+metadata/_edit_use_anchors_ = true
