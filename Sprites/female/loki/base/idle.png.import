@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4lxyfsh70r8p"
-path="res://.godot/imported/idle.png-f687d0ca7013d9bd646858c5f10b10f1.ctex"
+path="res://.godot/imported/idle.png-837e1317eee7eb60feef9e82767e5270.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/loki/base/idle.png"
-dest_files=["res://.godot/imported/idle.png-f687d0ca7013d9bd646858c5f10b10f1.ctex"]
+source_file="res://sprites/female/loki/base/idle.png"
+dest_files=["res://.godot/imported/idle.png-837e1317eee7eb60feef9e82767e5270.ctex"]
 
 [params]
 

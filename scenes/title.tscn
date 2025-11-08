@@ -1,8 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://d38m38utb5syh"]
+[gd_scene load_steps=17 format=3 uid="uid://d38m38utb5syh"]
 
 [ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="1_pyl7j"]
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="2_b3w7a"]
-[ext_resource type="Script" uid="uid://bmmghrkwkvk4y" path="res://scenes/logo.gd" id="2_w65of"]
+[ext_resource type="Script" uid="uid://bmmghrkwkvk4y" path="res://scripts/logo.gd" id="2_w65of"]
 [ext_resource type="StyleBox" uid="uid://cggdq6xhd65ui" path="res://theme/button_red.tres" id="3_4rr2b"]
 [ext_resource type="StyleBox" uid="uid://g8yldm7htm21" path="res://theme/button_yellow.tres" id="4_ia1n6"]
 [ext_resource type="Script" uid="uid://45dv4micba66" path="res://scripts/exit_button.gd" id="4_yql1r"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dw1gqagvisr3d" path="res://sprites/title/extinction.png" id="7_ia1n6"]
 [ext_resource type="Texture2D" uid="uid://wvkjju5i185h" path="res://sprites/title/ override.png" id="8_hiwto"]
 [ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="8_w65of"]
+[ext_resource type="Script" uid="uid://bsrjmddqeuv0x" path="res://scripts/play_button.gd" id="10_ygloa"]
+[ext_resource type="Script" uid="uid://ygqbm37ak7m7" path="res://scripts/credits_button.gd" id="11_6civk"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7lgly"]
 
@@ -17,7 +19,7 @@
 atlas = ExtResource("8_w65of")
 region = Rect2(0, 0, 24, 24)
 
-[sub_resource type="FontVariation" id="FontVariation_3xoar"]
+[sub_resource type="FontVariation" id="FontVariation_w65of"]
 base_font = ExtResource("2_b3w7a")
 baseline_offset = 0.4
 
@@ -40,7 +42,7 @@ Button/constants/h_separation = 4
 Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 40
-Button/fonts/font = SubResource("FontVariation_3xoar")
+Button/fonts/font = SubResource("FontVariation_w65of")
 Button/styles/disabled = ExtResource("5_hiwto")
 Button/styles/focus = ExtResource("5_hiwto")
 Button/styles/hover = ExtResource("4_ia1n6")
@@ -80,7 +82,6 @@ grow_vertical = 2
 pivot_offset = Vector2(425, 32)
 alignment = 2
 script = ExtResource("2_w65of")
-metadata/_edit_use_anchors_ = true
 
 [node name="extinction" type="TextureRect" parent="Logo"]
 layout_mode = 2
@@ -125,7 +126,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = SubResource("Theme_7lgly")
 text = "PLAY"
-script = ExtResource("4_yql1r")
+script = ExtResource("10_ygloa")
 metadata/_edit_use_anchors_ = true
 
 [node name="CreditsButton" type="Button" parent="Buttons"]
@@ -134,7 +135,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = SubResource("Theme_7lgly")
 text = "Credits"
-script = ExtResource("4_yql1r")
+script = ExtResource("11_6civk")
 metadata/_edit_use_anchors_ = true
 
 [node name="ExitButton" type="Button" parent="Buttons"]

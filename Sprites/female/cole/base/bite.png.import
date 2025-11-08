@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2h14244hm2rm"
-path="res://.godot/imported/bite.png-c095a59a6ed3805c0fbea6e5c89b4adf.ctex"
+path="res://.godot/imported/bite.png-504e97e2108c58b85ab58214843c7930.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/cole/base/bite.png"
-dest_files=["res://.godot/imported/bite.png-c095a59a6ed3805c0fbea6e5c89b4adf.ctex"]
+source_file="res://sprites/female/cole/base/bite.png"
+dest_files=["res://.godot/imported/bite.png-504e97e2108c58b85ab58214843c7930.ctex"]
 
 [params]
 
