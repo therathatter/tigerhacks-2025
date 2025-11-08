@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://phkbopgr75k"]
+
+[ext_resource type="Texture2D" uid="uid://cvajx7gcuorxe" path="res://sprites/ui_svgs/green/button_square_header_small_square_screws.svg" id="1_lg2ql"]
+
+[resource]
+texture = ExtResource("1_lg2ql")
+texture_margin_left = 32.0
+texture_margin_top = 32.0
+texture_margin_right = 32.0
+texture_margin_bottom = 32.0
