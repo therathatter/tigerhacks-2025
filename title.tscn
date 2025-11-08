@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d38m38utb5syh"]
+
+[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://Space Background (4).png" id="6_0824t"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7lgly"]
+
+[node name="Control" type="Control"]
+texture_repeat = 2
+material = SubResource("CanvasItemMaterial_7lgly")
+use_parent_material = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 128.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_offset = Vector2(1024, 1024)
+repeat_size = Vector2(1024, 1024)
+autoscroll = Vector2(-48, -32)
+repeat_times = 16
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("6_0824t")
