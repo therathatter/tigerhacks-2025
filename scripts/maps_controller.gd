@@ -43,7 +43,7 @@ func _process(delta: float) -> void:
 			continue
 		if not kick_charge.charging:
 			var direction = (tilemap.position - player_node.position).normalized()
-			tilemap.position += direction * delta * kick_charge.dt_charge * 50 #draw straight line to tilemap, move the whole tilemap by dt_charge * 10 in that direction
+			tilemap.position += direction * delta * kick_charge.dt_charge * 50 #draw straight line to tilemap, move the whole tilemap by dt_charge * 50 in that direction
 
 			
 	
