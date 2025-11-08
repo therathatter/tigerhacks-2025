@@ -11,4 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 func _pressed() -> void:
-	pass
+	$"../../AnimationPlayer".play("fade")
+	await $"../../AnimationPlayer".animation_finished
+	get_tree().change_scene_to_file("res://scenes/intro_cutscene.tscn")
