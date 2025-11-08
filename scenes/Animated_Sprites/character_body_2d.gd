@@ -4,6 +4,9 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -300.0
 
+func _ready() -> void:
+	var camera = $Camera2D
+	camera.make_current()
 
 func _physics_process(delta: float) -> void:
 	var animated_sprite = $AnimatedSprite2D

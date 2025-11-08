@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr37q8tpi05hu"
-path="res://.godot/imported/avoid.png-c1c81deebce636007a04b2391c91506e.ctex"
+path="res://.godot/imported/avoid.png-9199310e5cdd8c66ef3235d83fb768ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/male/loki/base/avoid.png"
-dest_files=["res://.godot/imported/avoid.png-c1c81deebce636007a04b2391c91506e.ctex"]
+source_file="res://Sprites/male/loki/base/avoid.png"
+dest_files=["res://.godot/imported/avoid.png-9199310e5cdd8c66ef3235d83fb768ee.ctex"]
 
 [params]
 
