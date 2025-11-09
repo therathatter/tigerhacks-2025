@@ -498,6 +498,51 @@ scale = Vector2(1, 1)
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Lose" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Lose"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.0023, 0.0028133332, 0.7019608)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Lose"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15277778
+anchor_top = 0.4691358
+anchor_right = 0.8472222
+anchor_bottom = 0.5308642
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Lose/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("19_4aw03")
+bbcode_enabled = true
+text = "CONGRATS! YOU SAVED {DINOSAUR}!"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("20_u2htp")
+
+[node name="EoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
+layout_mode = 2
+text = "RETRY LEVEL"
+
 [node name="Win" type="Control" parent="CanvasLayer"]
 visible = false
 layout_mode = 3
@@ -544,3 +589,5 @@ layout_mode = 2
 text = "NEXT LEVEL"
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/EoButton" to="." method="_on_retry"]
+[connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/EoButton" to="." method="_on_next_level"]

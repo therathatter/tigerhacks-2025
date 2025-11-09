@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dawq6ina87yjo"
-path="res://.godot/imported/dash.png-14c8ee230a50494334b57739b215f289.ctex"
+path="res://.godot/imported/dash.png-e5123665710e1876b7abdbae37e99856.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/kira/base/dash.png"
-dest_files=["res://.godot/imported/dash.png-14c8ee230a50494334b57739b215f289.ctex"]
+source_file="res://sprites/female/kira/base/dash.png"
+dest_files=["res://.godot/imported/dash.png-e5123665710e1876b7abdbae37e99856.ctex"]
 
 [params]
 

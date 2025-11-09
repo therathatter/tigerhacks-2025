@@ -12,7 +12,7 @@ func startMoving() -> void:
 	tween.tween_property(self, "position", blackhole.get_screen_position() + self.size / 2, 5.0)
 	await tween.finished
 	stopRotating()
-	get_tree().change_scene_to_file("res://scenes/tutorial_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/tutorial_level.tscn")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

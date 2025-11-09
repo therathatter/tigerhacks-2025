@@ -1,10 +1,10 @@
-[gd_scene load_steps=21 format=4 uid="uid://bfl6bt545d1ka"]
+[gd_scene load_steps=21 format=4 uid="uid://bj50w1us87f1i"]
 
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_i8m3h"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_2iuaq"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="6_m2g2s"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="7_q72f6"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="8_t7aa4"]
+[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="8_t7aa4"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="9_kgkl0"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="12_fp3bk"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="13_hyyxn"]

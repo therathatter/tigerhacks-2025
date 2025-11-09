@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://bkt373fy3qqif"]
+[gd_scene load_steps=30 format=4 uid="uid://b27c31vjkuph3"]
 
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="2_hpxl2"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="3_fem2g"]
