@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://bay62e5awu436"]
+[gd_scene load_steps=79 format=3 uid="uid://bay62e5awu436"]
 
 [ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
 [ext_resource type="Script" uid="uid://dfobovt13clq7" path="res://scenes/Animated_Sprites/cole.gd" id="1_naklk"]
@@ -21,6 +21,7 @@
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="19_4aw03"]
 [ext_resource type="Script" uid="uid://s6qbrtilfet7" path="res://scenes/rich_text_label.gd" id="20_u2htp"]
 [ext_resource type="PackedScene" uid="uid://cyla2onleadlb" path="res://scenes/eo_button.tscn" id="21_5q4rg"]
+[ext_resource type="Script" uid="uid://hkimvhy5nx88" path="res://scenes/Animated_Sprites/win_rich_text.gd" id="22_u2htp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqenr"]
 atlas = ExtResource("1_ad0t4")
@@ -582,7 +583,7 @@ text = "CONGRATS! YOU SAVED {DINOSAUR}!"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("20_u2htp")
+script = ExtResource("22_u2htp")
 
 [node name="EoButton" parent="CanvasLayer/Win/VBoxContainer" instance=ExtResource("21_5q4rg")]
 layout_mode = 2
