@@ -1,11 +1,11 @@
-[gd_scene load_steps=23 format=4 uid="uid://c63afg0efdscq"]
+[gd_scene load_steps=23 format=4 uid="uid://d0hrwturt7fgw"]
 
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_s8va5"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_dga24"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="3_qxy0u"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="4_excbq"]
-[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="5_iav0o"]
-[ext_resource type="Script" uid="uid://dy0kjosp06mmu" path="res://scenes/levels/lose_area.gd" id="6_dga24"]
+[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="5_iav0o"]
+[ext_resource type="Script" path="res://scenes/levels/lose_area.gd" id="6_dga24"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_dnkej"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_mm8aj"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="8_wtwp4"]
@@ -46,7 +46,7 @@ height = 18.0
 size = Vector2(1801.6664, 51.666584)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwtda"]
-size = Vector2(39.583527, 7.666687)
+size = Vector2(45.833427, 9.375084)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3lf0c"]
 
@@ -203,7 +203,7 @@ position = Vector2(-11, 21)
 
 [node name="Platforms" type="TileMapLayer" parent="."]
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAD8/wEAAAAAAAMAAAD7/wEAAAAAAAMAAAD6/wEAAAAAAAMAAAD5//7/AAAAAAMAAAD4//7/AAAAAAMAAAD3//7/AAAAAAMAAAAaAAEAAAAAAAMAAAAbAAEAAAAAAAMAAAAcAP7/AAAAAAMAAAAdAP7/AAAAAAMAAAAeAP7/AAAAAAMAAAAZAAEAAAAAAAMAAAD+/wMAAAAAAAMAAAD//wMAAAAAAAMAAAAAAAMAAAAAAAMAAAAEAAMAAAAAAAMAAAAFAAMAAAAAAAMAAAAGAAMAAAAAAAMAAAAKAAMAAAAAAAMAAAALAAMAAAAAAAMAAAAMAAMAAAAAAAMAAAAQAAMAAAAAAAMAAAARAAMAAAAAAAMAAAASAAMAAAAAAAMAAAAWAAMAAAAAAAMAAAAXAAMAAAAAAAMAAAAYAAMAAAAAAAMAAAD6//v/AAAAAAMAAAD7//v/AAAAAAMAAAD8//v/AAAAAAMAAAAYAPv/AAAAAAMAAAAZAPv/AAAAAAMAAAAaAPv/AAAAAAMAAAA=")
+tile_map_data = PackedByteArray("AAD8/wEAAAAAAAMAAAD7/wEAAAAAAAMAAAD6/wEAAAAAAAMAAAD5//7/AAAAAAMAAAD4//7/AAAAAAMAAAD3//7/AAAAAAMAAAAaAAEAAAAAAAMAAAAbAAEAAAAAAAMAAAAcAP7/AAAAAAMAAAAdAP7/AAAAAAMAAAAeAP7/AAAAAAMAAAAZAAEAAAAAAAMAAAD6//v/AAAAAAMAAAD7//v/AAAAAAMAAAD8//v/AAAAAAMAAAAYAPv/AAAAAAMAAAAZAPv/AAAAAAMAAAAaAPv/AAAAAAMAAAD+/wQAAAAAAAMAAAD//wQAAAAAAAMAAAAAAAQAAAAAAAMAAAAEAAQAAAAAAAMAAAAFAAQAAAAAAAMAAAAGAAQAAAAAAAMAAAAKAAQAAAAAAAMAAAALAAQAAAAAAAMAAAAMAAQAAAAAAAMAAAAQAAQAAAAAAAMAAAARAAQAAAAAAAMAAAASAAQAAAAAAAMAAAAWAAQAAAAAAAMAAAAXAAQAAAAAAAMAAAAYAAQAAAAAAAMAAAA=")
 tile_set = SubResource("TileSet_nt1u7")
 
 [connection signal="body_entered" from="LoseArea" to="LoseArea" method="_on_body_entered"]

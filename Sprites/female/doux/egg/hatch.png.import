@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbes0l6efmm3k"
-path="res://.godot/imported/hatch.png-1a98b64b41e698607c80c5901dd12d15.ctex"
+path="res://.godot/imported/hatch.png-2ec012755394e76c8a7d1054e84197a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/female/doux/egg/hatch.png"
-dest_files=["res://.godot/imported/hatch.png-1a98b64b41e698607c80c5901dd12d15.ctex"]
+source_file="res://Sprites/female/doux/egg/hatch.png"
+dest_files=["res://.godot/imported/hatch.png-2ec012755394e76c8a7d1054e84197a0.ctex"]
 
 [params]
 

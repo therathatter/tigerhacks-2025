@@ -21,6 +21,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("reset_level"):
 		get_tree().reload_current_scene()
+		G.State.BlockInput = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
