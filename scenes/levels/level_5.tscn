@@ -185,14 +185,14 @@ tile_set = SubResource("TileSet_unsrw")
 position = Vector2(56, -328)
 shape = SubResource("CapsuleShape2D_er3ew")
 
-[node name="BoxArea" type="Area2D" parent="."]
+[node name="WinArea" type="Area2D" parent="."]
 position = Vector2(23, 171)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("6_5ke18")
 next_level = ExtResource("7_tqnj0")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
 position = Vector2(656.2499, -424.99994)
 scale = Vector2(0.59999967, 0.59999967)
 shape = SubResource("RectangleShape2D_mwtda")
@@ -216,5 +216,5 @@ position = Vector2(426.71875, -530.9375)
 scale = Vector2(0.6, 0.6)
 shape = SubResource("RectangleShape2D_tqnj0")
 
-[connection signal="body_entered" from="BoxArea" to="BoxArea" method="_on_body_entered"]
+[connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
 [connection signal="body_entered" from="LoseArea" to="LoseArea" method="_on_body_entered"]
