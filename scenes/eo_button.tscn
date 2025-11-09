@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyla2onleadlb"]
+
+[ext_resource type="Theme" uid="uid://gkty2e0eialk" path="res://theme/buttons.tres" id="1_2yebp"]
+[ext_resource type="Script" uid="uid://ghkmssx7y66w" path="res://scenes/eo_button.gd" id="1_su2e5"]
+
+[node name="EoButton" type="Button"]
+anchors_preset = -1
+anchor_right = 0.055555556
+anchor_bottom = 0.09876543
+theme = ExtResource("1_2yebp")
+script = ExtResource("1_su2e5")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
