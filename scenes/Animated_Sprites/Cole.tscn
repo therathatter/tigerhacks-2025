@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bay62e5awu436"]
+[gd_scene load_steps=74 format=3 uid="uid://bay62e5awu436"]
 
 [ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
 [ext_resource type="Script" uid="uid://bm5k3q2prnn07" path="res://scenes/Animated_Sprites/character_body_2d.gd" id="1_y48p6"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://c8gy7kyho1s8u" path="res://sprites/male/cole/base/move.png" id="12_4lupg"]
 [ext_resource type="Texture2D" uid="uid://bq8n1fiwvl5sw" path="res://sprites/male/cole/base/scan.png" id="14_a3x8a"]
 [ext_resource type="Script" uid="uid://biqg1mn13mncn" path="res://scenes/Animated_Sprites/camera_2d.gd" id="16_nxiry"]
+[ext_resource type="PackedScene" uid="uid://dioqqf824b1ie" path="res://scenes/kick_charge.tscn" id="17_frjk5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqenr"]
 atlas = ExtResource("1_ad0t4")
@@ -405,7 +406,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_duwu1")
 }],
-"loop": true,
+"loop": false,
 "name": &"Kick",
 "speed": 5.0
 }, {
@@ -428,7 +429,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wdl5e")
 }],
-"loop": true,
+"loop": false,
 "name": &"Move",
 "speed": 10.0
 }, {
@@ -467,7 +468,7 @@ script = ExtResource("1_y48p6")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_luqd3")
-animation = &"Idle"
+animation = &"Move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 scale = Vector2(2, 2)
@@ -476,3 +477,20 @@ shape = SubResource("CircleShape2D_2cmte")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(2, 2)
 script = ExtResource("16_nxiry")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="KickCharge" parent="CanvasLayer" instance=ExtResource("17_frjk5")]
+anchors_preset = -1
+anchor_left = 0.041666668
+anchor_top = 0.80246913
+anchor_right = 0.35416666
+anchor_bottom = 0.9259259
+offset_right = 0.0
+offset_bottom = 0.0
+grow_vertical = 0
+scale = Vector2(1, 1)
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
