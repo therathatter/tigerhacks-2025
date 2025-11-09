@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bac5xjk8gjut6"
-path="res://.godot/imported/dead.png-25e428ef958d9bc2db9f50aa16facbc5.ctex"
+path="res://.godot/imported/dead.png-575865cc2731b3ec6fb3b8651f386b22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/male/kuro/base/dead.png"
-dest_files=["res://.godot/imported/dead.png-25e428ef958d9bc2db9f50aa16facbc5.ctex"]
+source_file="res://sprites/male/kuro/base/dead.png"
+dest_files=["res://.godot/imported/dead.png-575865cc2731b3ec6fb3b8651f386b22.ctex"]
 
 [params]
 
