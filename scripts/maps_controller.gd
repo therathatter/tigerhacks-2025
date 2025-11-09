@@ -17,6 +17,9 @@ func _ready() -> void:
 				
 	if tilemaps_path:
 		tilemaps_container = get_node(tilemaps_path)
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("reset_level"):
+		get_tree().reload_current_scene()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
