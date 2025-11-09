@@ -4,7 +4,7 @@ class_name Player
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -450.0
-const JUMP_SOUND = preload("res://sounds/jump.mp3")
+var JUMP_SOUND = load(ProjectSettings.globalize_path("res://sounds/jump.mp3"))
 @onready var animated_sprite = $AnimatedSprite2D
 
 var kicking = false
