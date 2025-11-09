@@ -7,6 +7,8 @@
 anchors_preset = -1
 anchor_right = 0.055555556
 anchor_bottom = 0.09876543
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme = ExtResource("1_2yebp")
 script = ExtResource("1_su2e5")
 metadata/_edit_use_anchors_ = true

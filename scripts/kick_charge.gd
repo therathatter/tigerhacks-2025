@@ -13,7 +13,7 @@ func _ready() -> void:
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("kick_charge") and allowed_to_charge and !$KickAudioStream.playing:
+	if Input.is_action_just_pressed("kick_charge") and allowed_to_charge:
 		charging = true
 	elif Input.is_action_just_released("kick_charge"):
 		if charging:
