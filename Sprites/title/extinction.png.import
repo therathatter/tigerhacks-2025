@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw1gqagvisr3d"
-path="res://.godot/imported/extinction.png-7fdea7677c0e20130719b5881cd4c6c5.ctex"
+path="res://.godot/imported/extinction.png-3548c020e2fcab1d5256da5a97c5f8a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/title/extinction.png"
-dest_files=["res://.godot/imported/extinction.png-7fdea7677c0e20130719b5881cd4c6c5.ctex"]
+source_file="res://Sprites/title/extinction.png"
+dest_files=["res://.godot/imported/extinction.png-3548c020e2fcab1d5256da5a97c5f8a5.ctex"]
 
 [params]
 
