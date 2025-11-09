@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du1fatow7jci5"
-path="res://.godot/imported/crack.png-d97b6e17a6e0f5faf5d905f690faf7b4.ctex"
+path="res://.godot/imported/crack.png-4870927f8380bbd83cb36119e89276a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/male/kuro/egg/crack.png"
-dest_files=["res://.godot/imported/crack.png-d97b6e17a6e0f5faf5d905f690faf7b4.ctex"]
+source_file="res://sprites/male/kuro/egg/crack.png"
+dest_files=["res://.godot/imported/crack.png-4870927f8380bbd83cb36119e89276a9.ctex"]
 
 [params]
 
