@@ -45,16 +45,13 @@ func _physics_process(delta: float) -> void:
 			var camera = player_node.get_child(2)
 			var tile_relpos = tilebody.global_position - camera.global_position
 			
-			tilebody.angular_damp = 2.0
 			tilebody.gravity_scale = 0.15
 			
 			var direction =  camera.global_position.direction_to(tile_relpos)#(tilemap_center - player_center) #/ 50#.normalized()'
-			#print(direction)
-			#print('tilemap pos:', tile_relpos)
-			#print('player pos:', camera.global_position)
-			tilebody.apply_impulse(direction * 5)
-			#tilebody.apply_force(direction * delta * kick_charge.dt_charge*5000, tile_relpos)
-			#tilebody.position += direction * (delta * kick_charge.dt_charge * 50) #draw straight line to tilemap, move the whole tilemap by dt_charge * 50 in that direction
+			tilebody.apply_force(direction * kick_charge.dt_charge * 575)
+			tilebody.angular_damp_mode = 1
+			tilebody.angular_damp = 9.0
+		
 
 			
 	
