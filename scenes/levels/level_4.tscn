@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="4_4wsov"]
 [ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="5_qvnao"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_hsvsk"]
-[ext_resource type="Script" path="res://scenes/levels/lose_area.gd" id="6_um320"]
+[ext_resource type="Script" uid="uid://dy0kjosp06mmu" path="res://scenes/levels/lose_area.gd" id="6_um320"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_fcb7b"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="8_ov8fk"]
 
