@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 	if lastX != get_x():
 		# Calculate the zoom delta
 		var xdelta = get_x() - lastX
-		var zdelta = xdelta / 1200.0
+		var zdelta = xdelta / 1800.0
 		self.zoom.x += zdelta
 		self.zoom.y += zdelta
 		lastX = get_x() 
