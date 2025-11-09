@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p3qvs5x2wi4x"
-path="res://.godot/imported/avoid.png-f4809c488c79ad7bed22b0db0ffe322e.ctex"
+path="res://.godot/imported/avoid.png-f1b6079b37500528e9e4b716dbd3182c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/female/kuro/base/avoid.png"
-dest_files=["res://.godot/imported/avoid.png-f4809c488c79ad7bed22b0db0ffe322e.ctex"]
+source_file="res://Sprites/female/kuro/base/avoid.png"
+dest_files=["res://.godot/imported/avoid.png-f1b6079b37500528e9e4b716dbd3182c.ctex"]
 
 [params]
 

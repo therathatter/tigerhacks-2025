@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqtns06ae43ho"
-path="res://.godot/imported/idle.png-af3452c88e772c99c7d24a7873d6e749.ctex"
+path="res://.godot/imported/idle.png-70910861507aea51b731164b24624546.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/female/kuro/ghost/idle.png"
-dest_files=["res://.godot/imported/idle.png-af3452c88e772c99c7d24a7873d6e749.ctex"]
+source_file="res://Sprites/female/kuro/ghost/idle.png"
+dest_files=["res://.godot/imported/idle.png-70910861507aea51b731164b24624546.ctex"]
 
 [params]
 
