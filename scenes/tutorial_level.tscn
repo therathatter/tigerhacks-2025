@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://bkt373fy3qqif"]
+[gd_scene load_steps=31 format=4 uid="uid://bkt373fy3qqif"]
 
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="2_hpxl2"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="3_fem2g"]
@@ -4265,17 +4265,13 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vj1s7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vj1s7"]
-size = Vector2(29, 30)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_471vg"]
+size = Vector2(30.5, 32)
 
 [node name="TutorialLevel" type="Node2D"]
 
 [node name="SpaceBackground" parent="." instance=ExtResource("6_fem2g")]
-visible = false
 
 [node name="InnerBackground" type="PanelContainer" parent="."]
-visible = false
 clip_contents = true
 offset_left = -80.0
 offset_top = -80.0
@@ -4347,7 +4343,7 @@ position = Vector2(65, -42)
 shape = SubResource("CircleShape2D_471vg")
 
 [node name="Player" parent="." instance=ExtResource("5_hpxl2")]
-position = Vector2(-50, -46)
+position = Vector2(1, 102)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -4374,16 +4370,10 @@ tile_set = SubResource("TileSet_471vg")
 
 [node name="BoxArea" type="Area2D" parent="."]
 script = ExtResource("14_471vg")
-egg_rigidbody_path = NodePath("../RigidBody2D")
+egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(-48.5, -47)
+position = Vector2(-48.25, -47)
 shape = SubResource("RectangleShape2D_vj1s7")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(-37, -58)
-shape = SubResource("RectangleShape2D_471vg")
 
 [connection signal="body_entered" from="BoxArea" to="BoxArea" method="_on_body_entered"]
