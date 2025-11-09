@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba2mboo6xjvd3"
-path="res://.godot/imported/kick.png-25b159eae01cbf94b8134f2f3fdb09d3.ctex"
+path="res://.godot/imported/kick.png-5cc3441ba636da5dbbb7aa8fe95bc64c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/female/mono/base/kick.png"
-dest_files=["res://.godot/imported/kick.png-25b159eae01cbf94b8134f2f3fdb09d3.ctex"]
+source_file="res://Sprites/female/mono/base/kick.png"
+dest_files=["res://.godot/imported/kick.png-5cc3441ba636da5dbbb7aa8fe95bc64c.ctex"]
 
 [params]
 
