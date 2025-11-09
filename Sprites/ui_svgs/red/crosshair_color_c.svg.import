@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c88mbn3x31rvv"
-path="res://.godot/imported/crosshair_color_c.svg-7aa759b2ca61fc1a4c0eee879caca4e9.ctex"
+path="res://.godot/imported/crosshair_color_c.svg-b0e48b79691117e624201fa8e72ece67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/ui_svgs/red/crosshair_color_c.svg"
-dest_files=["res://.godot/imported/crosshair_color_c.svg-7aa759b2ca61fc1a4c0eee879caca4e9.ctex"]
+source_file="res://Sprites/ui_svgs/red/crosshair_color_c.svg"
+dest_files=["res://.godot/imported/crosshair_color_c.svg-b0e48b79691117e624201fa8e72ece67.ctex"]
 
 [params]
 
