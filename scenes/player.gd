@@ -19,9 +19,9 @@ func get_canvas_layer():
 func get_kick_charge():
 	return $Cole.get_kick_charge()
 	
-func show_win():
+func show_win(level):
 	G.State.HasWonLevel = true
-	return $Cole.show_win()
+	return $Cole.show_win(level)
 	
 func calculate_relative_pos(v):
 	return $Cole.calculate_relative_pos(v)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh16tpgecp3fp"
-path="res://.godot/imported/move.png-e1008673e8bfa59f1f22193b20ad7c0e.ctex"
+path="res://.godot/imported/move.png-28543f43f4d672476cba3676c5cb6733.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/loki/base/move.png"
-dest_files=["res://.godot/imported/move.png-e1008673e8bfa59f1f22193b20ad7c0e.ctex"]
+source_file="res://sprites/female/loki/base/move.png"
+dest_files=["res://.godot/imported/move.png-28543f43f4d672476cba3676c5cb6733.ctex"]
 
 [params]
 
