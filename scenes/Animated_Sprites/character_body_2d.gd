@@ -14,6 +14,9 @@ func _ready() -> void:
 	camera.make_current()
 
 func _physics_process(delta: float) -> void:
+	if G.State.HasWonLevel:
+		velocity = Vector2(0,0)
+		return
 	
 	# Add the gravity.
 	if not is_on_floor():

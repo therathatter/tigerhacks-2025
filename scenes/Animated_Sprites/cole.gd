@@ -16,3 +16,9 @@ func get_canvas_layer():
 	return $CanvasLayer
 func get_kick_charge():
 	return $CanvasLayer/KickCharge
+func show_win():
+	$CanvasLayer.remove_child(get_kick_charge())
+	$CanvasLayer/Win.visible = true
+	
+func calculate_relative_pos(v):
+	return v - $CharacterBody2D/Camera2D.global_position
