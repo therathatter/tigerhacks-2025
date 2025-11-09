@@ -3,6 +3,10 @@ extends Area2D
 @export var next_level: PackedScene
 @export var egg_rigidbody_path: NodePath
 
+func _process(delta: float) -> void:
+	if $"../Player".calculate_relative_pos($"../Player".position).y < -1000:
+		$"../Player".show_lose(next_level)
+
 func _on_body_entered(body: Node2D) -> void:
 	if not egg_rigidbody_path:
 		return

@@ -9,8 +9,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	# Out of bounds
-	if calculate_relative_pos(self.position).y < -1000:
-		show_lose(nextLevel)
+	pass
+
 
 func get_character_body():
 	return $Cole.get_character_body()

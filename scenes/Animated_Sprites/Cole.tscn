@@ -649,6 +649,7 @@ stream = ExtResource("26_qeujh")
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/RetryEoButton" to="." method="_on_retry"]
+[connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/SkipButton" to="." method="_on_skip_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/MainMenuEoButton" to="." method="_on_main_menu_eo_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/NextLevelEoButton" to="." method="_on_next_level"]
 [connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/MainMenuEoButton" to="." method="_on_main_menu_eo_button_pressed"]
