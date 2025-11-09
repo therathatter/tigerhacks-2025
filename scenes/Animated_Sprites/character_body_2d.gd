@@ -3,7 +3,7 @@ extends CharacterBody2D
 class_name Player
 
 const SPEED = 150.0
-const JUMP_VELOCITY = -600.0
+const JUMP_VELOCITY = -450.0
 const JUMP_SOUND = preload("res://sounds/jump.mp3")
 @onready var animated_sprite = $AnimatedSprite2D
 
@@ -14,7 +14,7 @@ func _ready() -> void:
 	camera.make_current()
 
 func _physics_process(delta: float) -> void:
-	if G.State.HasWonLevel:
+	if G.State.BlockInput:
 		velocity = Vector2(0,0)
 		return
 	

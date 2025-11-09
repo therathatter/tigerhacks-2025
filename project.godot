@@ -10,10 +10,13 @@ config_version=5
 
 [application]
 
-config/name="tigerhacks-2025"
+config/name="Extinction Override"
+config/description="TigerHacks 2025 game"
+config/version="1"
 run/main_scene="uid://d38m38utb5syh"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/image="uid://w2ot8fh23jyh"
+config/icon="uid://w2ot8fh23jyh"
 
 [autoload]
 

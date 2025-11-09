@@ -12,5 +12,5 @@ func _on_body_entered(body: Node2D) -> void:
 		#tween.tween_property(body, "position", $"../Player".calculate_relative_pos(self.position), 1.0)
 		#await tween.finished
 		body.gravity_scale = 999
-		$"../Player".show_win("res://scenes/levels/level_1.tscn")
+		$"../Player".show_lose()
 		

@@ -1,21 +1,21 @@
 [gd_scene load_steps=78 format=3 uid="uid://bay62e5awu436"]
 
-[ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://Sprites/male/cole/base/avoid.png" id="1_ad0t4"]
-[ext_resource type="Script" path="res://scenes/Animated_Sprites/cole.gd" id="1_naklk"]
+[ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
+[ext_resource type="Script" uid="uid://dfobovt13clq7" path="res://scenes/Animated_Sprites/cole.gd" id="1_naklk"]
 [ext_resource type="Script" uid="uid://bm5k3q2prnn07" path="res://scenes/Animated_Sprites/character_body_2d.gd" id="1_y48p6"]
-[ext_resource type="Texture2D" uid="uid://k6hwjxhbfhp5" path="res://Sprites/male/cole/base/bite.png" id="2_jiyky"]
-[ext_resource type="Texture2D" uid="uid://byy4i2sbihf6k" path="res://Sprites/male/cole/base/dash.png" id="3_884i1"]
-[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://Sprites/male/cole/base/dead.png" id="4_unc5m"]
-[ext_resource type="Texture2D" uid="uid://0qc1nedy0nlg" path="res://Sprites/male/cole/egg/move.png" id="5_fps1x"]
-[ext_resource type="Texture2D" uid="uid://b5xwjrtpn220n" path="res://Sprites/male/cole/egg/crack.png" id="6_4sd3e"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="7_3gd4g"]
-[ext_resource type="Texture2D" uid="uid://bkb1h30e5hawr" path="res://Sprites/male/cole/egg/hatch.png" id="7_4ash3"]
-[ext_resource type="Texture2D" uid="uid://b1vpdiwna5vgc" path="res://Sprites/male/cole/base/hurt.png" id="8_74dp5"]
-[ext_resource type="Texture2D" uid="uid://bk7ab2n187fnk" path="res://Sprites/male/cole/base/idle.png" id="9_vsxyp"]
-[ext_resource type="Texture2D" uid="uid://bbrauxlasvqj" path="res://Sprites/male/cole/base/jump.png" id="10_3ex2c"]
-[ext_resource type="Texture2D" uid="uid://ca8cpemcmhabv" path="res://Sprites/male/cole/base/kick.png" id="11_v74gp"]
-[ext_resource type="Texture2D" uid="uid://c8gy7kyho1s8u" path="res://Sprites/male/cole/base/move.png" id="12_4lupg"]
-[ext_resource type="Texture2D" uid="uid://bq8n1fiwvl5sw" path="res://Sprites/male/cole/base/scan.png" id="14_a3x8a"]
+[ext_resource type="Texture2D" uid="uid://k6hwjxhbfhp5" path="res://sprites/male/cole/base/bite.png" id="2_jiyky"]
+[ext_resource type="Texture2D" uid="uid://byy4i2sbihf6k" path="res://sprites/male/cole/base/dash.png" id="3_884i1"]
+[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="4_unc5m"]
+[ext_resource type="Texture2D" uid="uid://0qc1nedy0nlg" path="res://sprites/male/cole/egg/move.png" id="5_fps1x"]
+[ext_resource type="Texture2D" uid="uid://b5xwjrtpn220n" path="res://sprites/male/cole/egg/crack.png" id="6_4sd3e"]
+[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="7_3gd4g"]
+[ext_resource type="Texture2D" uid="uid://bkb1h30e5hawr" path="res://sprites/male/cole/egg/hatch.png" id="7_4ash3"]
+[ext_resource type="Texture2D" uid="uid://b1vpdiwna5vgc" path="res://sprites/male/cole/base/hurt.png" id="8_74dp5"]
+[ext_resource type="Texture2D" uid="uid://bk7ab2n187fnk" path="res://sprites/male/cole/base/idle.png" id="9_vsxyp"]
+[ext_resource type="Texture2D" uid="uid://bbrauxlasvqj" path="res://sprites/male/cole/base/jump.png" id="10_3ex2c"]
+[ext_resource type="Texture2D" uid="uid://ca8cpemcmhabv" path="res://sprites/male/cole/base/kick.png" id="11_v74gp"]
+[ext_resource type="Texture2D" uid="uid://c8gy7kyho1s8u" path="res://sprites/male/cole/base/move.png" id="12_4lupg"]
+[ext_resource type="Texture2D" uid="uid://bq8n1fiwvl5sw" path="res://sprites/male/cole/base/scan.png" id="14_a3x8a"]
 [ext_resource type="Script" uid="uid://biqg1mn13mncn" path="res://scenes/Animated_Sprites/camera_2d.gd" id="16_nxiry"]
 [ext_resource type="PackedScene" uid="uid://dioqqf824b1ie" path="res://scenes/kick_charge.tscn" id="17_frjk5"]
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="19_4aw03"]
@@ -498,6 +498,51 @@ scale = Vector2(1, 1)
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Lose" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Lose"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.0023, 0.0028133332, 0.7019608)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Lose"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15277778
+anchor_top = 0.4691358
+anchor_right = 0.8472222
+anchor_bottom = 0.5308642
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Lose/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("19_4aw03")
+bbcode_enabled = true
+text = "CONGRATS! YOU SAVED {DINOSAUR}!"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("20_u2htp")
+
+[node name="EoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
+layout_mode = 2
+text = "RETRY LEVEL"
+
 [node name="Win" type="Control" parent="CanvasLayer"]
 visible = false
 layout_mode = 3
@@ -544,3 +589,5 @@ layout_mode = 2
 text = "NEXT LEVEL"
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/EoButton" to="." method="_on_retry"]
+[connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/EoButton" to="." method="_on_next_level"]

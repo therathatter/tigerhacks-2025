@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cusf0rmlue30n"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://gkty2e0eialk"]
 
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="1_3g3qp"]
 [ext_resource type="StyleBox" path="res://theme/button_green.tres" id="2_xa2ke"]
