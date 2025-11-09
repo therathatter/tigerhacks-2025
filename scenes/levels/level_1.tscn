@@ -1,11 +1,11 @@
-[gd_scene load_steps=23 format=4 uid="uid://d0hrwturt7fgw"]
+[gd_scene load_steps=23 format=4 uid="uid://c63afg0efdscq"]
 
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_s8va5"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_dga24"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="3_qxy0u"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="4_excbq"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="5_iav0o"]
-[ext_resource type="Script" path="res://scenes/levels/lose_area.gd" id="6_dga24"]
+[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="5_iav0o"]
+[ext_resource type="Script" uid="uid://dy0kjosp06mmu" path="res://scenes/levels/lose_area.gd" id="6_dga24"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_dnkej"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_mm8aj"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="8_wtwp4"]
@@ -46,7 +46,7 @@ height = 18.0
 size = Vector2(1801.6664, 51.666584)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwtda"]
-size = Vector2(45.833427, 9.375084)
+size = Vector2(58.3334, 9.375084)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3lf0c"]
 
@@ -82,7 +82,7 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_3lf0c")
 sources/0 = SubResource("TileSetAtlasSource_35uj7")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="SpaceBackground" parent="." instance=ExtResource("1_s8va5")]
 
@@ -118,7 +118,7 @@ tile_set = ExtResource("2_dga24")
 
 [node name="WinBox" type="TileMapLayer" parent="PanelContainer"]
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AABNABsAAQACAAUAAABNABwAAQACAAUAAABNAB0AAQACAAUAAABNAB4AAQACAAYAAABJABsAAQAAAAUAAABJABwAAQAAAAUAAABJAB0AAQAAAAUAAABJAB4AAQAAAAYAAABKABsAAQABAAUAAABKABwAAQABAAUAAABKAB0AAQABAAUAAABKAB4AAQABAAYAAABLABsAAQABAAUAAABLABwAAQABAAUAAABLAB0AAQABAAUAAABLAB4AAQABAAYAAABMABsAAQABAAUAAABMABwAAQABAAUAAABMAB0AAQABAAUAAABMAB4AAQABAAYAAAA=")
+tile_map_data = PackedByteArray("AABNABsAAQACAAUAAABNABwAAQACAAUAAABNAB0AAQACAAUAAABNAB4AAQACAAYAAABKABsAAQABAAUAAABKABwAAQABAAUAAABKAB0AAQABAAUAAABLABsAAQABAAUAAABLABwAAQABAAUAAABLAB0AAQABAAUAAABLAB4AAQABAAYAAABMABsAAQABAAUAAABMABwAAQABAAUAAABMAB0AAQABAAUAAABMAB4AAQABAAYAAABKAB4AAQABAAYAAABJAB4AAQABAAYAAABIAB4AAQAAAAYAAABIAB0AAQAAAAUAAABIABwAAQAAAAUAAABIABsAAQAAAAUAAAA=")
 tile_set = ExtResource("2_dga24")
 
 [node name="Border" type="TileMapLayer" parent="PanelContainer"]
@@ -167,13 +167,11 @@ gravity_scale = 0.0
 angular_damp = 100.0
 
 [node name="Egg" type="TileMapLayer" parent="TilemapsContainer/RigidBody2D"]
-scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAADAPP/AgAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAFAO3/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_unsrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TilemapsContainer/RigidBody2D"]
-position = Vector2(84, -300)
-scale = Vector2(1.5, 1.5)
+position = Vector2(88, -296)
 shape = SubResource("CapsuleShape2D_er3ew")
 
 [node name="LoseArea" type="Area2D" parent="."]
@@ -194,8 +192,8 @@ script = ExtResource("6_dnkej")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
-position = Vector2(538.75, -381.25)
-scale = Vector2(0.6, 0.6)
+position = Vector2(533.75, -372.49994)
+scale = Vector2(0.59999996, 0.59999996)
 shape = SubResource("RectangleShape2D_mwtda")
 
 [node name="Player" parent="." instance=ExtResource("7_mm8aj")]

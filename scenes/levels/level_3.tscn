@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://dfxl0kk70c2ie"]
+[gd_scene load_steps=23 format=4 uid="uid://dfxl0kk70c2ie"]
 
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_ugcn1"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_pimnq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="4_n6eey"]
 [ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="5_qi5uv"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_f6egh"]
+[ext_resource type="Script" path="res://scenes/levels/lose_area.gd" id="6_pimnq"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_t4txi"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="8_apo5x"]
 
@@ -41,8 +42,11 @@ sources/2 = SubResource("TileSetAtlasSource_2v2r1")
 radius = 8.0
 height = 18.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bnyt"]
+size = Vector2(1801.6664, 51.666584)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwtda"]
-size = Vector2(39.583557, 7.6667175)
+size = Vector2(56.2502, 7.6667175)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3lf0c"]
 
@@ -114,7 +118,7 @@ tile_set = ExtResource("2_pimnq")
 
 [node name="WinBox" type="TileMapLayer" parent="PanelContainer"]
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AABfABkAAQAAAAUAAABfABoAAQAAAAUAAABfABsAAQAAAAYAAABgABkAAQABAAUAAABgABoAAQABAAUAAABgABsAAQABAAYAAABhABkAAQABAAUAAABhABoAAQABAAUAAABhABsAAQABAAYAAABiABkAAQABAAUAAABiABoAAQABAAUAAABiABsAAQABAAYAAABjABkAAQACAAUAAABjABoAAQACAAUAAABjABsAAQACAAYAAABfABgAAQAAAAUAAABgABgAAQABAAUAAABhABgAAQABAAUAAABiABgAAQABAAUAAABjABgAAQACAAUAAAA=")
+tile_map_data = PackedByteArray("AABfABkAAQAAAAUAAABfABoAAQAAAAUAAABfABsAAQAAAAYAAABgABkAAQABAAUAAABgABoAAQABAAUAAABgABsAAQABAAYAAABhABkAAQABAAUAAABhABoAAQABAAUAAABhABsAAQABAAYAAABiABkAAQABAAUAAABiABoAAQABAAUAAABiABsAAQABAAYAAABfABgAAQAAAAUAAABgABgAAQABAAUAAABhABgAAQABAAUAAABiABgAAQABAAUAAABkABgAAQACAAUAAABkABkAAQACAAUAAABkABoAAQACAAUAAABkABsAAQACAAYAAABjABsAAQABAAYAAAA=")
 tile_set = ExtResource("2_pimnq")
 
 [node name="Border" type="TileMapLayer" parent="PanelContainer"]
@@ -163,24 +167,33 @@ gravity_scale = 0.0
 angular_damp = 100.0
 
 [node name="Egg" type="TileMapLayer" parent="TilemapsContainer/RigidBody2D"]
-scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAADAPP/AgAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAEAO3/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_unsrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TilemapsContainer/RigidBody2D"]
-position = Vector2(84, -300)
-scale = Vector2(1.5, 1.5)
+position = Vector2(73, -296)
 shape = SubResource("CapsuleShape2D_er3ew")
 
-[node name="BoxArea" type="Area2D" parent="."]
+[node name="LoseArea" type="Area2D" parent="."]
+position = Vector2(41.4, 307.8)
+scale = Vector2(0.64000005, 0.64000005)
+script = ExtResource("6_pimnq")
+egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LoseArea"]
+position = Vector2(507.3125, -515.4376)
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_2bnyt")
+
+[node name="WinArea" type="Area2D" parent="."]
 position = Vector2(23, 171)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("6_f6egh")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(695.6249, -393.94995)
-scale = Vector2(0.5999998, 0.5999998)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
+position = Vector2(699.3749, -393.94995)
+scale = Vector2(0.59999967, 0.59999967)
 shape = SubResource("RectangleShape2D_mwtda")
 
 [node name="Player" parent="." instance=ExtResource("7_t4txi")]
@@ -191,4 +204,5 @@ scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAD8/wEAAAAAAAMAAAD7/wEAAAAAAAMAAAD6/wEAAAAAAAMAAAD5//7/AAAAAAMAAAD4//7/AAAAAAMAAAD3//7/AAAAAAMAAAAaAAEAAAAAAAMAAAAbAAEAAAAAAAMAAAAcAP7/AAAAAAMAAAAdAP7/AAAAAAMAAAAeAP7/AAAAAAMAAAAZAAEAAAAAAAMAAAAYAPv/AAAAAAMAAAAZAPv/AAAAAAMAAAAaAPv/AAAAAAMAAAD6//v/AAAAAAMAAAD7//v/AAAAAAMAAAD8//v/AAAAAAMAAAD+/wQAAAAAAAMAAAD//wQAAAAAAAMAAAAAAAQAAAAAAAMAAAAEAAQAAAAAAAMAAAAFAAQAAAAAAAMAAAAGAAQAAAAAAAMAAAAKAAQAAAAAAAMAAAALAAQAAAAAAAMAAAAMAAQAAAAAAAMAAAAQAAQAAAAAAAMAAAARAAQAAAAAAAMAAAASAAQAAAAAAAMAAAAWAAQAAAAAAAMAAAAXAAQAAAAAAAMAAAAYAAQAAAAAAAMAAAA=")
 tile_set = SubResource("TileSet_nt1u7")
 
-[connection signal="body_entered" from="BoxArea" to="BoxArea" method="_on_body_entered"]
+[connection signal="body_entered" from="LoseArea" to="LoseArea" method="_on_body_entered"]
+[connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]

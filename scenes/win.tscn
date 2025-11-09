@@ -1,9 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqfsm761xquyt"]
+[gd_scene load_steps=5 format=3 uid="uid://c4yyyx2kby1aq"]
 
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="1_826fv"]
-[ext_resource type="Script" uid="uid://ck1k0wuxgotk6" path="res://scenes/win.gd" id="1_yxbqr"]
 [ext_resource type="Script" uid="uid://s6qbrtilfet7" path="res://scenes/rich_text_label.gd" id="3_tylv2"]
 [ext_resource type="PackedScene" uid="uid://cyla2onleadlb" path="res://scenes/eo_button.tscn" id="4_tylv2"]
+
+[sub_resource type="GDScript" id="GDScript_iiocm"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="Win" type="Control"]
 layout_mode = 3
@@ -12,7 +25,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_yxbqr")
+script = SubResource("GDScript_iiocm")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

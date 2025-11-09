@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://crxpmuyasnygl"]
 
-[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="1_xeku4"]
 [ext_resource type="Shader" uid="uid://craq5doo4k1fc" path="res://shaders/blackhole.gdshader" id="2_3438a"]
 [ext_resource type="Script" uid="uid://b3bgo5stnp32e" path="res://scenes/intro_cutscene.gd" id="2_jusdg"]
+[ext_resource type="Texture2D" uid="uid://dnd1fv3oatu6t" path="res://sprites/backgrounds/background11.png" id="3_jusdg"]
 [ext_resource type="Texture2D" uid="uid://c3nfhl24gpj6" path="res://sprites/backgrounds/blackhole.png" id="4_wifpd"]
 [ext_resource type="Script" uid="uid://b4tvinov2xk4b" path="res://scripts/blackhole.gd" id="5_dw6o5"]
 [ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="6_jusdg"]
@@ -104,22 +104,22 @@ script = ExtResource("2_jusdg")
 [node name="Parallax2D" type="Parallax2D" parent="."]
 use_parent_material = true
 scroll_offset = Vector2(1024, 1024)
-repeat_size = Vector2(1024, 1024)
+repeat_size = Vector2(2048, 1024)
 autoscroll = Vector2(-48, -32)
 repeat_times = 16
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
 use_parent_material = true
-texture = ExtResource("1_xeku4")
+texture = ExtResource("3_jusdg")
 
 [node name="Blackhole" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_dw6o5")
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.70909667
-anchor_top = 0.33789155
-anchor_right = 0.930146
-anchor_bottom = 0.7182928
+anchor_left = 0.7785411
+anchor_top = 0.38727427
+anchor_right = 0.99959046
+anchor_bottom = 0.76767546
 offset_left = -184.87933
 offset_top = -178.95372
 offset_right = 185.4718

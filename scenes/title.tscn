@@ -1,8 +1,8 @@
 [gd_scene load_steps=16 format=3 uid="uid://d38m38utb5syh"]
 
 [ext_resource type="Script" uid="uid://c5jjuiatuw72b" path="res://scenes/title.gd" id="1_7af2g"]
-[ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="1_pyl7j"]
 [ext_resource type="Script" uid="uid://bmmghrkwkvk4y" path="res://scripts/logo.gd" id="2_w65of"]
+[ext_resource type="Texture2D" uid="uid://dww4j5vplait" path="res://sprites/backgrounds/background13.png" id="2_ygloa"]
 [ext_resource type="Script" uid="uid://45dv4micba66" path="res://scripts/exit_button.gd" id="4_yql1r"]
 [ext_resource type="Texture2D" uid="uid://dw1gqagvisr3d" path="res://sprites/title/extinction.png" id="7_ia1n6"]
 [ext_resource type="Theme" uid="uid://gkty2e0eialk" path="res://theme/buttons.tres" id="7_w65of"]
@@ -66,13 +66,13 @@ grow_vertical = 2
 script = ExtResource("1_7af2g")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
-scroll_offset = Vector2(1024, 1024)
-repeat_size = Vector2(1024, 1024)
-autoscroll = Vector2(-48, -32)
+scroll_offset = Vector2(1024, 600)
+repeat_size = Vector2(2048, 1024)
+autoscroll = Vector2(-48, 0)
 repeat_times = 16
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
-texture = ExtResource("1_pyl7j")
+texture = ExtResource("2_ygloa")
 
 [node name="Logo" type="HBoxContainer" parent="."]
 layout_mode = 1

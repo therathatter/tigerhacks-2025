@@ -46,7 +46,7 @@ height = 18.0
 size = Vector2(1801.6664, 51.666584)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwtda"]
-size = Vector2(45.833427, 9.375084)
+size = Vector2(56.250057, 9.375084)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3lf0c"]
 
@@ -118,7 +118,7 @@ tile_set = ExtResource("2_um320")
 
 [node name="WinBox" type="TileMapLayer" parent="PanelContainer"]
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AAAaAB0AAQAAAAUAAAAaAB4AAQAAAAUAAAAaAB8AAQAAAAUAAAAaACAAAQAAAAYAAAAbAB0AAQABAAUAAAAbAB4AAQABAAUAAAAbAB8AAQABAAUAAAAbACAAAQABAAYAAAAcAB0AAQABAAUAAAAcAB4AAQABAAUAAAAcAB8AAQABAAUAAAAcACAAAQABAAYAAAAdAB0AAQABAAUAAAAdAB4AAQABAAUAAAAdAB8AAQABAAUAAAAdACAAAQABAAYAAAAeAB0AAQACAAUAAAAeAB4AAQACAAUAAAAeAB8AAQACAAUAAAAeACAAAQACAAYAAAA=")
+tile_map_data = PackedByteArray("AAAbAB0AAQABAAUAAAAbAB4AAQABAAUAAAAbAB8AAQABAAUAAAAbACAAAQABAAYAAAAcAB0AAQABAAUAAAAcAB4AAQABAAUAAAAcAB8AAQABAAUAAAAcACAAAQABAAYAAAAdAB0AAQABAAUAAAAdAB4AAQABAAUAAAAdAB8AAQABAAUAAAAdACAAAQABAAYAAAAeAB0AAQACAAUAAAAeAB4AAQACAAUAAAAeAB8AAQACAAUAAAAeACAAAQACAAYAAAAZAB0AAQAAAAUAAAAZAB4AAQAAAAUAAAAZAB8AAQAAAAUAAAAZACAAAQAAAAYAAAAaACAAAQABAAYAAAA=")
 tile_set = ExtResource("2_um320")
 
 [node name="Border" type="TileMapLayer" parent="PanelContainer"]
@@ -167,13 +167,11 @@ gravity_scale = 0.0
 angular_damp = 100.0
 
 [node name="Egg" type="TileMapLayer" parent="TilemapsContainer/RigidBody2D"]
-scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAADAO7/AgAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAEAOb/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_unsrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TilemapsContainer/RigidBody2D"]
-position = Vector2(84, -419)
-scale = Vector2(1.5, 1.5)
+position = Vector2(72, -408)
 shape = SubResource("CapsuleShape2D_er3ew")
 
 [node name="LoseArea" type="Area2D" parent="."]
@@ -194,8 +192,8 @@ script = ExtResource("6_hsvsk")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
-position = Vector2(198.74998, -358.74994)
-scale = Vector2(0.59999955, 0.59999955)
+position = Vector2(195.62495, -358.74994)
+scale = Vector2(0.5999995, 0.5999995)
 shape = SubResource("RectangleShape2D_mwtda")
 
 [node name="Player" parent="." instance=ExtResource("7_fcb7b")]
