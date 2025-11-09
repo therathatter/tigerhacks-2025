@@ -1829,7 +1829,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vj1s7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vj1s7"]
-size = Vector2(30.5, 32)
+size = Vector2(24, 24)
 
 [node name="TutorialLevel" type="Node2D"]
 
@@ -1922,7 +1922,7 @@ script = ExtResource("14_471vg")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(-48.25, -47)
+position = Vector2(-52, -44)
 shape = SubResource("RectangleShape2D_vj1s7")
 
 [connection signal="body_entered" from="BoxArea" to="BoxArea" method="_on_body_entered"]
