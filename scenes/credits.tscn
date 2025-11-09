@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bt1mwvo613ywv"]
+[gd_scene load_steps=18 format=3 uid="uid://bt1mwvo613ywv"]
 
 [ext_resource type="Texture2D" uid="uid://d4bijdakyiwee" path="res://sprites/backgrounds/background3.png" id="1_7lgdl"]
 [ext_resource type="Script" uid="uid://m1vomcflwed5" path="res://scenes/credits.gd" id="1_x5q3x"]
@@ -13,12 +13,13 @@
 [ext_resource type="Script" uid="uid://bwa8bp8vvy76e" path="res://scripts/back_button.gd" id="10_7lgdl"]
 [ext_resource type="FontFile" uid="uid://cx604kg8cd6vr" path="res://fonts/SpaceMono-Regular.ttf" id="11_c6kru"]
 [ext_resource type="Script" uid="uid://nrv1cv2hsbkj" path="res://scripts/rich_text_label.gd" id="12_qbfqv"]
+[ext_resource type="AudioStream" uid="uid://c48j0vdaovrev" path="res://sounds/interstellar.mp3" id="14_nmdnh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e4uir"]
 atlas = ExtResource("4_x5q3x")
 region = Rect2(0, 0, 24, 24)
 
-[sub_resource type="FontVariation" id="FontVariation_3xoar"]
+[sub_resource type="FontVariation" id="FontVariation_83ncp"]
 base_font = ExtResource("6_83ncp")
 baseline_offset = 0.4
 
@@ -41,7 +42,7 @@ Button/constants/h_separation = 4
 Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 40
-Button/fonts/font = SubResource("FontVariation_3xoar")
+Button/fonts/font = SubResource("FontVariation_83ncp")
 Button/styles/disabled = ExtResource("7_sxold")
 Button/styles/focus = ExtResource("7_sxold")
 Button/styles/hover = ExtResource("8_olp7g")
@@ -79,7 +80,6 @@ grow_vertical = 2
 pivot_offset = Vector2(425, 32)
 alignment = 2
 script = ExtResource("2_c6kru")
-metadata/_edit_use_anchors_ = true
 
 [node name="extinction" type="TextureRect" parent="Logo"]
 layout_mode = 2
@@ -155,3 +155,7 @@ deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
 script = ExtResource("12_qbfqv")
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_nmdnh")
+autoplay = true
