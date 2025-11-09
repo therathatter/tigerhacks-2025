@@ -193,15 +193,9 @@ scale = Vector2(0.8, 0.8)
 script = ExtResource("6_dnkej")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
-<<<<<<< HEAD
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
 position = Vector2(538.75, -381.25)
 scale = Vector2(0.6, 0.6)
-=======
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(536.8748, -372.69998)
-scale = Vector2(0.5999998, 0.5999998)
->>>>>>> c3e3c96b2b59a54476963cfa0ba1cd293ae638d5
 shape = SubResource("RectangleShape2D_mwtda")
 
 [node name="Player" parent="." instance=ExtResource("7_mm8aj")]
