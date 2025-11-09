@@ -179,7 +179,7 @@ script = ExtResource("6_f6egh")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(710.5, -264.75)
+position = Vector2(696.25, -405)
 scale = Vector2(0.6, 0.6)
 shape = SubResource("RectangleShape2D_mwtda")
 
