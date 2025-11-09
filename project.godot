@@ -15,7 +15,7 @@ config/description="TigerHacks 2025 game"
 config/version="1"
 run/main_scene="uid://d38m38utb5syh"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-boot_splash/image="uid://w2ot8fh23jyh"
+boot_splash/image="uid://xkerfrdpx0bl"
 config/icon="uid://w2ot8fh23jyh"
 
 [autoload]
