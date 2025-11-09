@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dioqqf824b1ie"]
+[gd_scene load_steps=8 format=3 uid="uid://dioqqf824b1ie"]
 
 [ext_resource type="Script" uid="uid://d25pw0xsxxb7l" path="res://scripts/kick_charge.gd" id="1_4opoe"]
 [ext_resource type="Theme" uid="uid://dj87g64fsle2x" path="res://theme/kick_charge.tres" id="1_kkb8p"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://s6qbrtilfet7" path="res://scenes/rich_text_label.gd" id="4_feiyt"]
 [ext_resource type="Texture2D" uid="uid://dynu4hniqprru" path="res://sprites/ui_svgs/grey/bar_square_gloss_large_square.svg" id="4_r0o8y"]
 [ext_resource type="Texture2D" uid="uid://cd2afjp5wgjpu" path="res://sprites/ui_svgs/red/bar_square_gloss_large_square.svg" id="5_d1u8f"]
+[ext_resource type="AudioStream" uid="uid://f7q27c6j734k" path="res://sounds/kick.wav" id="7_r0o8y"]
 
 [node name="KickCharge" type="VBoxContainer"]
 offset_right = 364.8
@@ -33,3 +34,6 @@ stretch_margin_right = 16
 stretch_margin_bottom = 16
 texture_under = ExtResource("4_r0o8y")
 texture_progress = ExtResource("5_d1u8f")
+
+[node name="KickAudioStream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_r0o8y")

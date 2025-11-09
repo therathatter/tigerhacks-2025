@@ -50,21 +50,6 @@ Button/styles/hover_pressed = ExtResource("5_hiwto")
 Button/styles/normal = ExtResource("3_4rr2b")
 Button/styles/pressed = ExtResource("5_hiwto")
 
-[sub_resource type="Animation" id="Animation_6civk"]
-resource_name = "fade"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:color:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-
 [sub_resource type="Animation" id="Animation_7af2g"]
 length = 0.001
 tracks/0/type = "value"
@@ -78,6 +63,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_6civk"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_81wt4"]
@@ -160,6 +160,10 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_left = NodePath("../ExitButton")
+focus_neighbor_right = NodePath("../CreditsButton")
+focus_next = NodePath("../CreditsButton")
+focus_previous = NodePath("../ExitButton")
 theme = SubResource("Theme_7lgly")
 text = "PLAY"
 script = ExtResource("10_ygloa")
@@ -169,6 +173,10 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_left = NodePath("../PlayButton")
+focus_neighbor_right = NodePath("../ExitButton")
+focus_next = NodePath("../ExitButton")
+focus_previous = NodePath("../PlayButton")
 theme = SubResource("Theme_7lgly")
 text = "Credits"
 script = ExtResource("11_6civk")
@@ -178,6 +186,10 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_left = NodePath("../CreditsButton")
+focus_neighbor_right = NodePath("../PlayButton")
+focus_next = NodePath("../PlayButton")
+focus_previous = NodePath("../CreditsButton")
 theme = SubResource("Theme_7lgly")
 text = "Quit"
 script = ExtResource("4_yql1r")

@@ -5,15 +5,19 @@ var charging = false
 var allowed_to_charge = true
 var dt_charge = 0.0
 
+var kick_sound = preload("res://sounds/kick.wav")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("kick_charge") and allowed_to_charge:
+	if Input.is_action_just_pressed("kick_charge") and allowed_to_charge and !$KickAudioStream.playing:
 		charging = true
 	elif Input.is_action_just_released("kick_charge"):
+		if charging:
+			G.SoundHelpers.play_async(self, kick_sound)
 		#handle kick
 		charging = false
 		allowed_to_charge = false

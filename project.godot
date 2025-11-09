@@ -15,6 +15,10 @@ run/main_scene="uid://d38m38utb5syh"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+G="*res://scripts/magic_shared_code.gd"
+
 [dotnet]
 
 project/assembly_name="tigerhacks-2025"
@@ -60,3 +64,4 @@ kick_charge={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/vram_compression/import_etc2_astc=true
