@@ -1,14 +1,15 @@
-[gd_scene load_steps=23 format=4 uid="uid://0x8vnhh85ygw"]
+[gd_scene load_steps=24 format=4 uid="uid://d2j3v4g12qufc"]
 
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_mxx4w"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_vvoq0"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="3_tqnj0"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="4_dwyms"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="5_6xwso"]
+[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="5_6xwso"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_5ke18"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_j14br"]
+[ext_resource type="PackedScene" uid="uid://d0qgfvv23hhyq" path="res://scenes/levels/finished.tscn" id="7_tqnj0"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="8_0y7y4"]
-[ext_resource type="Script" path="res://scenes/levels/lose_area.gd" id="9_vvoq0"]
+[ext_resource type="Script" uid="uid://dy0kjosp06mmu" path="res://scenes/levels/lose_area.gd" id="9_vvoq0"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_nt1u7"]
 a = Vector2(-5.370392, 1325.3702)
@@ -188,6 +189,7 @@ shape = SubResource("CapsuleShape2D_er3ew")
 position = Vector2(23, 171)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("6_5ke18")
+next_level = ExtResource("7_tqnj0")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
