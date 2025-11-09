@@ -44,7 +44,7 @@ func _on_retry() -> void:
 
 func _on_next_level() -> void:
 	G.State.BlockInput = false
-	get_tree().change_scene_to_file(nextLevel)
+	get_tree().change_scene_to_packed(nextLevel)
 
 func _on_main_menu_eo_button_pressed() -> void:
 	G.State.BlockInput = false
