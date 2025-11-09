@@ -16,9 +16,11 @@ func get_canvas_layer():
 	return $CanvasLayer
 func get_kick_charge():
 	return $CanvasLayer/KickCharge
-func show_win():
+func show_win(level):
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Win.visible = true
+	$CanvasLayer/Win/VBoxContainer/EoButton.nextLevel = level
+	
 	
 func calculate_relative_pos(v):
 	return v - $CharacterBody2D/Camera2D.global_position
