@@ -30,3 +30,17 @@ func _on_button_pressed() -> void:
 func _on_button_focus_entered() -> void:
 	G.SoundHelpers.play_async(G, G.HOVER_SOUND)
 	pass # Replace with function body.
+
+func _on_back_button_mouse_entered() -> void:
+	G.SoundHelpers.play_async(G, G.HOVER_SOUND)
+	pass # Replace with function body.
+
+
+func _on_back_button_focus_entered() -> void:
+	G.SoundHelpers.play_async(G, G.HOVER_SOUND)
+	pass # Replace with function body.
+
+
+func _on_back_button_pressed() -> void:
+	G.SoundHelpers.play_async(G, G.SELECT_SOUND)
+	pass # Replace with function body.

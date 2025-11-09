@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://b4tvinov2xk4b" path="res://scripts/blackhole.gd" id="5_dw6o5"]
 [ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="6_jusdg"]
 [ext_resource type="Script" uid="uid://8k3afthshy8k" path="res://scripts/texture_rect.gd" id="7_dcu1r"]
-[ext_resource type="AudioStream" uid="uid://d3weppkvid5xd" path="res://sounds/static.wav" id="8_dcu1r"]
+[ext_resource type="AudioStream" uid="uid://tfd5d1oksp0a" path="res://sounds/static.mp3" id="8_dcu1r"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xeku4"]
 shader = ExtResource("2_3438a")
