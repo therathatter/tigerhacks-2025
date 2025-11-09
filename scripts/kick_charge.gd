@@ -18,7 +18,6 @@ func _process(delta: float) -> void:
 	elif Input.is_action_just_released("kick_charge"):
 		if charging:
 			G.SoundHelpers.play_async(self, kick_sound)
-			
 			$"../../CharacterBody2D/AnimatedSprite2D".play("Kick")
 		#handle kick
 		charging = false
