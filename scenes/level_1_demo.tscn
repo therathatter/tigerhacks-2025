@@ -4,8 +4,8 @@
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="1_d67h8"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="2_sg86v"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="3_bqc8u"]
-[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="4_2yamv"]
-[ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_3lf0c"]
+[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="4_2yamv"]
+[ext_resource type="Script" path="res://scripts/box_area.gd" id="6_3lf0c"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_35uj7"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="9_2468p"]
 
@@ -88,13 +88,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 80.0
-offset_top = -341.0
-offset_right = 1230.0
-offset_bottom = 134.0
+offset_left = 18.0
+offset_top = -300.0
+offset_right = 1168.0
+offset_bottom = 175.0
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(0.8, 0.8)
+scale = Vector2(0.6, 0.6)
 metadata/_edit_use_anchors_ = true
 
 [node name="Sky" type="TileMapLayer" parent="PanelContainer"]
@@ -164,11 +164,11 @@ angular_damp = 100.0
 
 [node name="Egg" type="TileMapLayer" parent="TilemapsContainer/RigidBody2D"]
 scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAAJAPH/AgAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAFAPH/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_unsrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TilemapsContainer/RigidBody2D"]
-position = Vector2(229, -347)
+position = Vector2(133, -347)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("CapsuleShape2D_er3ew")
 
@@ -179,7 +179,7 @@ script = ExtResource("6_3lf0c")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(788, -316)
+position = Vector2(710.5, -264.75)
 scale = Vector2(0.6, 0.6)
 shape = SubResource("RectangleShape2D_mwtda")
 
@@ -188,7 +188,7 @@ position = Vector2(-11, 21)
 
 [node name="Platforms" type="TileMapLayer" parent="."]
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAD7////AAAAAAMAAAD6////AAAAAAMAAAD9//z/AAAAAAMAAAD+//z/AAAAAAMAAAABAPn/AAAAAAMAAAAAAPn/AAAAAAMAAAD+//b/AAAAAAMAAAD9//b/AAAAAAMAAAD//wQAAAAAAAMAAAD+/wQAAAAAAAMAAAD9/wQAAAAAAAMAAAAAAAQAAAAAAAMAAAABAAQAAAAAAAMAAAADAAYAAAAAAAMAAAAEAAYAAAAAAAMAAAAFAAYAAAAAAAMAAAAGAAYAAAAAAAMAAAAJAAUAAAAAAAMAAAAKAAUAAAAAAAMAAAALAAUAAAAAAAMAAAAMAAUAAAAAAAMAAAARAAUAAAAAAAMAAAASAAUAAAAAAAMAAAATAAUAAAAAAAMAAAAUAAUAAAAAAAMAAAAVAAUAAAAAAAMAAAAYAAYAAAAAAAMAAAAZAAYAAAAAAAMAAAAaAAYAAAAAAAMAAAAbAAYAAAAAAAMAAAAeAAUAAAAAAAMAAAAfAAUAAAAAAAMAAAAgAAUAAAAAAAMAAAAhAAUAAAAAAAMAAAAjAAMAAAAAAAMAAAAkAAMAAAAAAAMAAAAlAAMAAAAAAAMAAAAmAAMAAAAAAAMAAAAiAP7/AAAAAAMAAAAhAP7/AAAAAAMAAAAgAP7/AAAAAAMAAAAjAPj/AAAAAAMAAAAkAPj/AAAAAAMAAAAlAPj/AAAAAAMAAAAmAPj/AAAAAAMAAAA=")
+tile_map_data = PackedByteArray("AAD7////AAAAAAMAAAD6////AAAAAAMAAAD9//z/AAAAAAMAAAD+//z/AAAAAAMAAAD+//b/AAAAAAMAAAD9//b/AAAAAAMAAAD//wQAAAAAAAMAAAD+/wQAAAAAAAMAAAD9/wQAAAAAAAMAAAAAAAQAAAAAAAMAAAABAAQAAAAAAAMAAAADAAYAAAAAAAMAAAAEAAYAAAAAAAMAAAAFAAYAAAAAAAMAAAAGAAYAAAAAAAMAAAAJAAUAAAAAAAMAAAAKAAUAAAAAAAMAAAALAAUAAAAAAAMAAAAMAAUAAAAAAAMAAAARAAUAAAAAAAMAAAASAAUAAAAAAAMAAAATAAUAAAAAAAMAAAAUAAUAAAAAAAMAAAAVAAUAAAAAAAMAAAAYAAYAAAAAAAMAAAAZAAYAAAAAAAMAAAAaAAYAAAAAAAMAAAAbAAYAAAAAAAMAAAAeAAUAAAAAAAMAAAAfAAUAAAAAAAMAAAAgAAUAAAAAAAMAAAAhAAUAAAAAAAMAAAAjAAMAAAAAAAMAAAAkAAMAAAAAAAMAAAAlAAMAAAAAAAMAAAAmAAMAAAAAAAMAAAAiAP7/AAAAAAMAAAAhAP7/AAAAAAMAAAAgAP7/AAAAAAMAAAAjAPj/AAAAAAMAAAAkAPj/AAAAAAMAAAAlAPj/AAAAAAMAAAAmAPj/AAAAAAMAAAD6//r/AAAAAAMAAAD5//r/AAAAAAMAAAA=")
 tile_set = SubResource("TileSet_nt1u7")
 
 [connection signal="body_entered" from="BoxArea" to="BoxArea" method="_on_body_entered"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6bd3meiv6ygc"
-path="res://.godot/imported/dash.png-0e1d40e248082f3424e5421e0e0c2dc4.ctex"
+path="res://.godot/imported/dash.png-26b8d6596c782dc86d29f6dcf79e5952.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/female/loki/base/dash.png"
-dest_files=["res://.godot/imported/dash.png-0e1d40e248082f3424e5421e0e0c2dc4.ctex"]
+source_file="res://Sprites/female/loki/base/dash.png"
+dest_files=["res://.godot/imported/dash.png-26b8d6596c782dc86d29f6dcf79e5952.ctex"]
 
 [params]
 
