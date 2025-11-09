@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 		charging = true
 	elif Input.is_action_just_released("kick_charge"):
 		if charging:
-			MagicSharedCode.play_sound_async(self, kick_sound)
+			G.SoundHelpers.play_async(self, kick_sound)
 		#handle kick
 		charging = false
 		allowed_to_charge = false

@@ -20,7 +20,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		#animated_sprite.play("Jump") 
 		velocity.y = JUMP_VELOCITY
-		MagicSharedCode.play_sound_async(self, JUMP_SOUND)
+		G.SoundHelpers.play_async(self, JUMP_SOUND)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
