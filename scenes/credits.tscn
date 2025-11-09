@@ -59,9 +59,9 @@ grow_vertical = 2
 script = ExtResource("1_x5q3x")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
-scroll_offset = Vector2(2048, 1024)
+scroll_offset = Vector2(2048, 600)
 repeat_size = Vector2(2048, 1024)
-autoscroll = Vector2(-48, -32)
+autoscroll = Vector2(-48, 0)
 repeat_times = 16
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]

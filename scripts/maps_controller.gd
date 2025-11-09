@@ -32,11 +32,19 @@ func _physics_process(delta: float) -> void:
 			continue
 		if not kick_charge.charging and kick_charge.dt_charge > 0 and !G.State.BlockInput:
 			var camera = player_node.get_child(2)
+			
+			# Compute the relative position in world space
 			var tile_relpos = tilebody.global_position - camera.global_position
+
+			# Factor in the tilebody's scale
+			tile_relpos.x /= tilebody.scale.x
+			tile_relpos.y /= tilebody.scale.y
+
+			var direction = tile_relpos.normalized()
 			
 			tilebody.gravity_scale = 0.15
 			
-			var direction =  camera.global_position.direction_to(tile_relpos)#(tilemap_center - player_center) #/ 50#.normalized()'
+			# var direction =  camera.global_position.direction_to(tile_relpos)#(tilemap_center - player_center) #/ 50#.normalized()'
 			tilebody.apply_force(direction * kick_charge.dt_charge * 575)
 			tilebody.angular_damp_mode = 1
 			tilebody.angular_damp = 9.0
