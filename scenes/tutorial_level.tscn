@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bqjpyba2oq12l" path="res://Terrain/parallax/4.png" id="5_jjf0l"]
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="6_fem2g"]
 [ext_resource type="Texture2D" uid="uid://dglowj3h3glkp" path="res://Terrain/parallax/1.png" id="7_31kg2"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="8_471vg"]
+[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="8_471vg"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="12_jjf0l"]
 [ext_resource type="Texture2D" uid="uid://bvr8ugyoibc11" path="res://Terrain/generic_platformer_tiles.png" id="12_vj1s7"]
 [ext_resource type="Script" path="res://scripts/box_area.gd" id="14_471vg"]
