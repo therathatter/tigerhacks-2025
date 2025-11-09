@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c4yyyx2kby1aq"]
 
-[ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="1_826fv"]
+[ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/kenney_future.ttf" id="1_826fv"]
 [ext_resource type="Script" uid="uid://s6qbrtilfet7" path="res://scenes/rich_text_label.gd" id="3_tylv2"]
 [ext_resource type="PackedScene" uid="uid://cyla2onleadlb" path="res://scenes/eo_button.tscn" id="4_tylv2"]
 

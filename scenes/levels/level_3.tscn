@@ -4,12 +4,12 @@
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_pimnq"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="3_2bnyt"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="4_n6eey"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="5_qi5uv"]
+[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://sprites/female/cole/egg/test.tres" id="5_qi5uv"]
 [ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_f6egh"]
 [ext_resource type="Script" uid="uid://dy0kjosp06mmu" path="res://scenes/levels/lose_area.gd" id="6_pimnq"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_t4txi"]
 [ext_resource type="PackedScene" uid="uid://ce7gpfjy0c1yw" path="res://scenes/levels/level_4.tscn" id="8_2bnyt"]
-[ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="8_apo5x"]
+[ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://terrain/platforms.png" id="8_apo5x"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_nt1u7"]
 a = Vector2(-5.370392, 1325.3702)

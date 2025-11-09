@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt4bnc00ivkx7"
-path="res://.godot/imported/DarkHouseTiles.png-7e3d3131789fd208a33217bf97d3e177.ctex"
+uid="uid://ly8kh6dtbigw"
+path="res://.godot/imported/sprite_sheet.png-451aabf2ec57bfcf020b031a595d09f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Terrain/DarkHouseTiles.png"
-dest_files=["res://.godot/imported/DarkHouseTiles.png-7e3d3131789fd208a33217bf97d3e177.ctex"]
+source_file="res://terrain/sprite_sheet.png"
+dest_files=["res://.godot/imported/sprite_sheet.png-451aabf2ec57bfcf020b031a595d09f9.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ftywjr8fuk37"]
 
-[ext_resource type="PackedScene" uid="uid://bay62e5awu436" path="res://scenes/Animated_Sprites/Cole.tscn" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://bay62e5awu436" path="res://scenes/animated_sprites/cole.tscn" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://0kkvomil37ba" path="res://scenes/player.gd" id="1_g2els"]
 
 [node name="Player" type="Node2D"]
