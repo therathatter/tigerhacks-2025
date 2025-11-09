@@ -12,8 +12,6 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	G.SoundHelpers.play_async(G, G.SELECT_SOUND)
-	get_tree().change_scene_to_file(nextLevel)
-	G.State.HasWonLevel = false
 
 func _on_focus_entered() -> void:
 	G.SoundHelpers.play_async(G, G.HOVER_SOUND)
