@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyd11o7b1ktu7"
-path="res://.godot/imported/hatch.png-6cf936e34632f740e9ce2fc9072a509c.ctex"
+path="res://.godot/imported/hatch.png-e7f61241d32c6125a98a5e11298ca27e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/loki/egg/hatch.png"
-dest_files=["res://.godot/imported/hatch.png-6cf936e34632f740e9ce2fc9072a509c.ctex"]
+source_file="res://sprites/female/loki/egg/hatch.png"
+dest_files=["res://.godot/imported/hatch.png-e7f61241d32c6125a98a5e11298ca27e.ctex"]
 
 [params]
 
