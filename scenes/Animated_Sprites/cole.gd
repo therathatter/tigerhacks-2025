@@ -24,7 +24,8 @@ func show_win(level):
 	G.SoundHelpers.play_async(self, G.WIN_SOUND)
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Win/VBoxContainer/RichTextLabel.set_random_text()
-	$CanvasLayer/Win/VBoxContainer/NextLevelEoButton.grab_focus()
+	if Input.get_connected_joypads().size() != 0:
+		$CanvasLayer/Win/VBoxContainer/NextLevelEoButton.grab_focus()
 	$CanvasLayer/Timer.stop(true)
 	$CanvasLayer/Win.visible = true
 	$AudioStreamPlayer.stop()
@@ -33,7 +34,8 @@ func show_lose(level):
 	G.SoundHelpers.play_async(self, G.FAIL_SOUND)
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Lose/VBoxContainer/RichTextLabel.set_random_text()
-	$CanvasLayer/Lose/VBoxContainer/RetryEoButton.grab_focus()
+	if Input.get_connected_joypads().size() != 0:
+		$CanvasLayer/Lose/VBoxContainer/RetryEoButton.grab_focus()
 	$CanvasLayer/Timer.stop(false)
 	$AudioStreamPlayer.stop()
 	$CanvasLayer/Lose.visible = true
