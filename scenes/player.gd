@@ -7,7 +7,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if calculate_relative_pos(self.position).y < -2000:
+		get_tree().reload_current_scene()
 
 func get_character_body():
 	return $Cole.get_character_body()
