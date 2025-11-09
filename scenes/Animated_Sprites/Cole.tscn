@@ -1,19 +1,20 @@
 [gd_scene load_steps=72 format=3 uid="uid://bay62e5awu436"]
 
-[ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
+[ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://Sprites/male/cole/base/avoid.png" id="1_ad0t4"]
 [ext_resource type="Script" uid="uid://bm5k3q2prnn07" path="res://scenes/Animated_Sprites/character_body_2d.gd" id="1_y48p6"]
-[ext_resource type="Texture2D" uid="uid://k6hwjxhbfhp5" path="res://sprites/male/cole/base/bite.png" id="2_jiyky"]
-[ext_resource type="Texture2D" uid="uid://byy4i2sbihf6k" path="res://sprites/male/cole/base/dash.png" id="3_884i1"]
-[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="4_unc5m"]
-[ext_resource type="Texture2D" uid="uid://0qc1nedy0nlg" path="res://sprites/male/cole/egg/move.png" id="5_fps1x"]
-[ext_resource type="Texture2D" uid="uid://b5xwjrtpn220n" path="res://sprites/male/cole/egg/crack.png" id="6_4sd3e"]
-[ext_resource type="Texture2D" uid="uid://bkb1h30e5hawr" path="res://sprites/male/cole/egg/hatch.png" id="7_4ash3"]
-[ext_resource type="Texture2D" uid="uid://b1vpdiwna5vgc" path="res://sprites/male/cole/base/hurt.png" id="8_74dp5"]
-[ext_resource type="Texture2D" uid="uid://bk7ab2n187fnk" path="res://sprites/male/cole/base/idle.png" id="9_vsxyp"]
-[ext_resource type="Texture2D" uid="uid://bbrauxlasvqj" path="res://sprites/male/cole/base/jump.png" id="10_3ex2c"]
-[ext_resource type="Texture2D" uid="uid://ca8cpemcmhabv" path="res://sprites/male/cole/base/kick.png" id="11_v74gp"]
-[ext_resource type="Texture2D" uid="uid://c8gy7kyho1s8u" path="res://sprites/male/cole/base/move.png" id="12_4lupg"]
-[ext_resource type="Texture2D" uid="uid://bq8n1fiwvl5sw" path="res://sprites/male/cole/base/scan.png" id="14_a3x8a"]
+[ext_resource type="Texture2D" uid="uid://k6hwjxhbfhp5" path="res://Sprites/male/cole/base/bite.png" id="2_jiyky"]
+[ext_resource type="Texture2D" uid="uid://byy4i2sbihf6k" path="res://Sprites/male/cole/base/dash.png" id="3_884i1"]
+[ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://Sprites/male/cole/base/dead.png" id="4_unc5m"]
+[ext_resource type="Texture2D" uid="uid://0qc1nedy0nlg" path="res://Sprites/male/cole/egg/move.png" id="5_fps1x"]
+[ext_resource type="Texture2D" uid="uid://b5xwjrtpn220n" path="res://Sprites/male/cole/egg/crack.png" id="6_4sd3e"]
+[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="7_3gd4g"]
+[ext_resource type="Texture2D" uid="uid://bkb1h30e5hawr" path="res://Sprites/male/cole/egg/hatch.png" id="7_4ash3"]
+[ext_resource type="Texture2D" uid="uid://b1vpdiwna5vgc" path="res://Sprites/male/cole/base/hurt.png" id="8_74dp5"]
+[ext_resource type="Texture2D" uid="uid://bk7ab2n187fnk" path="res://Sprites/male/cole/base/idle.png" id="9_vsxyp"]
+[ext_resource type="Texture2D" uid="uid://bbrauxlasvqj" path="res://Sprites/male/cole/base/jump.png" id="10_3ex2c"]
+[ext_resource type="Texture2D" uid="uid://ca8cpemcmhabv" path="res://Sprites/male/cole/base/kick.png" id="11_v74gp"]
+[ext_resource type="Texture2D" uid="uid://c8gy7kyho1s8u" path="res://Sprites/male/cole/base/move.png" id="12_4lupg"]
+[ext_resource type="Texture2D" uid="uid://bq8n1fiwvl5sw" path="res://Sprites/male/cole/base/scan.png" id="14_a3x8a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqenr"]
 atlas = ExtResource("1_ad0t4")
@@ -94,10 +95,6 @@ region = Rect2(24, 0, 24, 24)
 [sub_resource type="AtlasTexture" id="AtlasTexture_bpuf7"]
 atlas = ExtResource("5_fps1x")
 region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f4dk8"]
-atlas = ExtResource("5_fps1x")
-region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q3ol5"]
 atlas = ExtResource("6_4sd3e")
@@ -319,7 +316,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_bpuf7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_f4dk8")
+"texture": ExtResource("7_3gd4g")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_q3ol5")
@@ -461,18 +458,19 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_2cmte"]
 radius = 9.0
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_y48p6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_luqd3")
-animation = &"Scan"
-frame_progress = 0.16993554
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_2cmte")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-zoom = Vector2(5, 5)
+zoom = Vector2(2, 2)

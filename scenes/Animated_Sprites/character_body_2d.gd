@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 class_name Player
 
-const SPEED = 75.0
-const JUMP_VELOCITY = -300.0
+const SPEED = 150.0
+const JUMP_VELOCITY = -600.0
 const JUMP_SOUND = preload("res://sounds/jump.mp3")
 
 func _ready() -> void:
