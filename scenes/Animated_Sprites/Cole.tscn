@@ -1,6 +1,7 @@
-[gd_scene load_steps=74 format=3 uid="uid://bay62e5awu436"]
+[gd_scene load_steps=75 format=3 uid="uid://bay62e5awu436"]
 
 [ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
+[ext_resource type="Script" uid="uid://dfobovt13clq7" path="res://scenes/Animated_Sprites/cole.gd" id="1_naklk"]
 [ext_resource type="Script" uid="uid://bm5k3q2prnn07" path="res://scenes/Animated_Sprites/character_body_2d.gd" id="1_y48p6"]
 [ext_resource type="Texture2D" uid="uid://k6hwjxhbfhp5" path="res://sprites/male/cole/base/bite.png" id="2_jiyky"]
 [ext_resource type="Texture2D" uid="uid://byy4i2sbihf6k" path="res://sprites/male/cole/base/dash.png" id="3_884i1"]
@@ -461,6 +462,7 @@ animations = [{
 radius = 9.0
 
 [node name="Node2D2" type="Node2D"]
+script = ExtResource("1_naklk")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_y48p6")
