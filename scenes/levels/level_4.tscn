@@ -167,13 +167,11 @@ gravity_scale = 0.0
 angular_damp = 100.0
 
 [node name="Egg" type="TileMapLayer" parent="TilemapsContainer/RigidBody2D"]
-scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAADAO7/AgAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAEAOb/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_unsrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TilemapsContainer/RigidBody2D"]
-position = Vector2(84, -419)
-scale = Vector2(1.5, 1.5)
+position = Vector2(72, -408)
 shape = SubResource("CapsuleShape2D_er3ew")
 
 [node name="LoseArea" type="Area2D" parent="."]
