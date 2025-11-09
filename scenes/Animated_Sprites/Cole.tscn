@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bay62e5awu436"]
+[gd_scene load_steps=72 format=3 uid="uid://bay62e5awu436"]
 
 [ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
 [ext_resource type="Script" uid="uid://bm5k3q2prnn07" path="res://scenes/Animated_Sprites/character_body_2d.gd" id="1_y48p6"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://ca8cpemcmhabv" path="res://sprites/male/cole/base/kick.png" id="11_v74gp"]
 [ext_resource type="Texture2D" uid="uid://c8gy7kyho1s8u" path="res://sprites/male/cole/base/move.png" id="12_4lupg"]
 [ext_resource type="Texture2D" uid="uid://bq8n1fiwvl5sw" path="res://sprites/male/cole/base/scan.png" id="14_a3x8a"]
-[ext_resource type="AudioStream" uid="uid://ctfto223lwe07" path="res://sounds/jump.mp3" id="15_3gd4g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqenr"]
 atlas = ExtResource("1_ad0t4")
@@ -477,6 +476,3 @@ shape = SubResource("CircleShape2D_2cmte")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(5, 5)
-
-[node name="JumpAudioStream" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
-stream = ExtResource("15_3gd4g")

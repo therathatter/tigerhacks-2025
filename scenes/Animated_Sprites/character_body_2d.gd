@@ -4,6 +4,7 @@ class_name Player
 
 const SPEED = 75.0
 const JUMP_VELOCITY = -300.0
+const JUMP_SOUND = preload("res://sounds/jump.mp3")
 
 func _ready() -> void:
 	var camera = $Camera2D
@@ -19,7 +20,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		#animated_sprite.play("Jump") 
 		velocity.y = JUMP_VELOCITY
-		$JumpAudioStream.play()
+		MagicSharedCode.play_sound_async(self, JUMP_SOUND)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

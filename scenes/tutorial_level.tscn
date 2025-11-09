@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bkt373fy3qqif"]
+[gd_scene load_steps=18 format=3 uid="uid://bkt373fy3qqif"]
 
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="2_hpxl2"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="3_fem2g"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="5_hpxl2"]
 [ext_resource type="Texture2D" uid="uid://bqjpyba2oq12l" path="res://Terrain/parallax/4.png" id="5_jjf0l"]
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="6_fem2g"]
-[ext_resource type="AudioStream" uid="uid://f7q27c6j734k" path="res://sounds/kick.wav" id="6_qc43e"]
 [ext_resource type="Texture2D" uid="uid://dglowj3h3glkp" path="res://Terrain/parallax/1.png" id="7_31kg2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hpxl2"]
@@ -434,9 +433,6 @@ region_rect = Rect2(0, 0, 1024, 400)
 position = Vector2(128, 128)
 texture = ExtResource("5_jjf0l")
 region_rect = Rect2(0, 0, 1024, 400)
-
-[node name="KickAudioStream" type="AudioStreamPlayer2D" parent="InnerBackground"]
-stream = ExtResource("6_qc43e")
 
 [node name="MapsController" type="Node2D" parent="."]
 script = ExtResource("2_hpxl2")
