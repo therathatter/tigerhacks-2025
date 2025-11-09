@@ -17,4 +17,4 @@ func _process(delta: float) -> void:
 	pass
 	
 func _pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/title.tscn")
+	get_tree().change_scene_to_file(ProjectSettings.globalize_path("res://scenes/title.tscn"))

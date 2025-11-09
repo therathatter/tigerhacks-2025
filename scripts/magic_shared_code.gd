@@ -7,18 +7,19 @@ class GameState:
 	
 var State = GameState.new()
 
-const SELECT_SOUND = preload("res://sounds/select.wav")
-const HOVER_SOUND = preload("res://sounds/hover.wav")
-const JUMP_SOUND = preload("res://sounds/jump.mp3")
-const FAIL_SOUND = preload("res://sounds/fail.mp3")
-const WIN_SOUND = preload("res://sounds/win.wav")
 
-const LEVELS = [ 
-	preload("res://scenes/levels/tutorial_level.tscn"),
-	preload("res://scenes/levels/level_1.tscn"),
-	preload("res://scenes/levels/level_2.tscn"),
-	preload("res://scenes/levels/level_3.tscn"),
-	preload("res://scenes/levels/level_4.tscn")  
+var SELECT_SOUND = load(ProjectSettings.globalize_path("res://sounds/select.wav"))
+var HOVER_SOUND = load(ProjectSettings.globalize_path("res://sounds/hover.wav"))
+var JUMP_SOUND = load(ProjectSettings.globalize_path("res://sounds/jump.mp3"))
+var FAIL_SOUND = load(ProjectSettings.globalize_path("res://sounds/fail.mp3"))
+var WIN_SOUND = load(ProjectSettings.globalize_path("res://sounds/win.wav"))
+
+var LEVELS = [ 
+	load(ProjectSettings.globalize_path("res://scenes/levels/tutorial_level.tscn")),
+	load(ProjectSettings.globalize_path("res://scenes/levels/level_1.tscn")),
+	load(ProjectSettings.globalize_path("res://scenes/levels/level_2.tscn")),
+	load(ProjectSettings.globalize_path("res://scenes/levels/level_3.tscn")),
+	load(ProjectSettings.globalize_path("res://scenes/levels/level_4.tscn"))  
 ]
 
 

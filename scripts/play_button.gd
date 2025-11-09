@@ -22,4 +22,4 @@ func _pressed() -> void:
 	$"../../AnimationPlayer".play("fade")
 	G.State.CurrentLevel = 0
 	await $"../../AnimationPlayer".animation_finished
-	get_tree().change_scene_to_file("res://scenes/intro_cutscene.tscn")
+	get_tree().change_scene_to_file(ProjectSettings.globalize_path("res://scenes/intro_cutscene.tscn"))

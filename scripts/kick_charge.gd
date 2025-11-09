@@ -5,7 +5,7 @@ var charging = false
 var allowed_to_charge = true
 var dt_charge = 0.0
 
-var kick_sound = preload("res://sounds/kick.wav")
+var kick_sound = load(ProjectSettings.globalize_path("res://sounds/kick.wav"))
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

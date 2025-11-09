@@ -54,7 +54,7 @@ func _on_next_level() -> void:
 
 func _on_main_menu_eo_button_pressed() -> void:
 	G.State.BlockInput = false
-	get_tree().change_scene_to_file("res://scenes/title.tscn")
+	get_tree().change_scene_to_file(ProjectSettings.globalize_path("res://scenes/title.tscn"))
 
 func _on_skip_button_pressed() -> void:
 	G.State.BlockInput = false
