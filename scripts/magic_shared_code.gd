@@ -3,8 +3,13 @@ extends Node
 class GameState:
 	var CurrentLevel: int
 	var HasWonLevel: bool
+	var GameBooted: bool
 	
 var State = GameState.new()
+
+const SELECT_SOUND = preload("res://sounds/select.wav")
+const HOVER_SOUND = preload("res://sounds/hover.wav")
+const JUMP_SOUND = preload("res://sounds/jump.mp3")
 
 class SoundHelpers:
 	static func play_async(parent, sound):

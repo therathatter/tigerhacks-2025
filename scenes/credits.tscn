@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://bt1mwvo613ywv"]
+[gd_scene load_steps=17 format=3 uid="uid://bt1mwvo613ywv"]
 
 [ext_resource type="Texture2D" uid="uid://d4bijdakyiwee" path="res://sprites/backgrounds/background3.png" id="1_7lgdl"]
+[ext_resource type="Script" uid="uid://m1vomcflwed5" path="res://scenes/credits.gd" id="1_x5q3x"]
 [ext_resource type="Script" uid="uid://bmmghrkwkvk4y" path="res://scripts/logo.gd" id="2_c6kru"]
 [ext_resource type="Texture2D" uid="uid://dw1gqagvisr3d" path="res://sprites/title/extinction.png" id="3_qbfqv"]
 [ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="4_x5q3x"]
@@ -55,6 +56,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_x5q3x")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 scroll_offset = Vector2(2048, 1024)

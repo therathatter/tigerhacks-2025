@@ -21,5 +21,12 @@ func _process(delta: float) -> void:
 	elif self.rotation_degrees < -4.0:
 		# self.pivot_offset.x = randf_range(0.0, 25.0)
 		direction = 0
-	
 	pass
+
+func _on_button_pressed() -> void:
+	G.SoundHelpers.play_async(self, G.SELECT_SOUND)
+	pass # Replace with function body.
+
+func _on_button_focus_entered() -> void:
+	G.SoundHelpers.play_async(self, G.HOVER_SOUND)
+	pass # Replace with function body.

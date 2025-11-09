@@ -1,5 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://d38m38utb5syh"]
+[gd_scene load_steps=21 format=3 uid="uid://d38m38utb5syh"]
 
+[ext_resource type="Script" uid="uid://c5jjuiatuw72b" path="res://scenes/title.gd" id="1_7af2g"]
 [ext_resource type="Texture2D" uid="uid://btsd6vgwir86h" path="res://sprites/backgrounds/background2.png" id="1_pyl7j"]
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="2_b3w7a"]
 [ext_resource type="Script" uid="uid://bmmghrkwkvk4y" path="res://scripts/logo.gd" id="2_w65of"]
@@ -96,6 +97,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7af2g")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 scroll_offset = Vector2(1024, 1024)
@@ -209,3 +211,13 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0)
+
+[connection signal="focus_entered" from="Buttons/PlayButton" to="Logo" method="_on_button_focus_entered"]
+[connection signal="mouse_entered" from="Buttons/PlayButton" to="Logo" method="_on_button_focus_entered"]
+[connection signal="pressed" from="Buttons/PlayButton" to="Logo" method="_on_button_pressed"]
+[connection signal="focus_entered" from="Buttons/CreditsButton" to="Logo" method="_on_button_focus_entered"]
+[connection signal="mouse_entered" from="Buttons/CreditsButton" to="Logo" method="_on_button_focus_entered"]
+[connection signal="pressed" from="Buttons/CreditsButton" to="Logo" method="_on_button_pressed"]
+[connection signal="focus_entered" from="Buttons/ExitButton" to="Logo" method="_on_button_focus_entered"]
+[connection signal="mouse_entered" from="Buttons/ExitButton" to="Logo" method="_on_button_focus_entered"]
+[connection signal="pressed" from="Buttons/ExitButton" to="Logo" method="_on_button_pressed"]
