@@ -1,9 +1,9 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://gkty2e0eialk"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cusf0rmlue30n"]
 
 [ext_resource type="FontFile" uid="uid://bhgcebtydmsqa" path="res://fonts/Kenney Future.ttf" id="1_3g3qp"]
-[ext_resource type="StyleBox" uid="uid://phkbopgr75k" path="res://theme/button_green.tres" id="2_xa2ke"]
-[ext_resource type="StyleBox" uid="uid://g8yldm7htm21" path="res://theme/button_yellow.tres" id="3_4132q"]
-[ext_resource type="StyleBox" uid="uid://cggdq6xhd65ui" path="res://theme/button_red.tres" id="4_y7fs0"]
+[ext_resource type="StyleBox" path="res://theme/button_green.tres" id="2_xa2ke"]
+[ext_resource type="StyleBox" path="res://theme/button_yellow.tres" id="3_4132q"]
+[ext_resource type="StyleBox" path="res://theme/button_red.tres" id="4_y7fs0"]
 
 [sub_resource type="FontVariation" id="FontVariation_6civk"]
 base_font = ExtResource("1_3g3qp")
