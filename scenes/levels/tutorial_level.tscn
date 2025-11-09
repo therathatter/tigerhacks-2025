@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=4 uid="uid://bj50w1us87f1i"]
+[gd_scene load_steps=23 format=4 uid="uid://bj50w1us87f1i"]
 
+[ext_resource type="Script" uid="uid://ch63ct2jraya1" path="res://scenes/levels/tutorial_level.gd" id="1_77k6j"]
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_i8m3h"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="2_2iuaq"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="6_m2g2s"]
@@ -72,6 +73,7 @@ sources/0 = SubResource("TileSetAtlasSource_vj1s7")
 size = Vector2(35, 5)
 
 [node name="TutorialLevel" type="Node2D"]
+script = ExtResource("1_77k6j")
 
 [node name="SpaceBackground" parent="." instance=ExtResource("1_i8m3h")]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://bay62e5awu436"]
+[gd_scene load_steps=84 format=3 uid="uid://bay62e5awu436"]
 
 [ext_resource type="Shader" uid="uid://craq5doo4k1fc" path="res://shaders/blackhole.gdshader" id="1_5q4rg"]
 [ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
@@ -25,6 +25,7 @@
 [ext_resource type="Script" uid="uid://hkimvhy5nx88" path="res://scenes/Animated_Sprites/win_rich_text.gd" id="22_u2htp"]
 [ext_resource type="Script" uid="uid://dru3dnv5y4gc1" path="res://scenes/Animated_Sprites/timer.gd" id="24_bghvs"]
 [ext_resource type="FontFile" uid="uid://dlbwa55d4mbjj" path="res://fonts/whitrabt.ttf" id="24_w3boq"]
+[ext_resource type="AudioStream" uid="uid://bc64vxxqxsp8e" path="res://sounds/wind.wav" id="26_qeujh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bghvs"]
 shader = ExtResource("1_5q4rg")
@@ -556,12 +557,18 @@ script = ExtResource("20_u2htp")
 [node name="RetryEoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
 layout_mode = 2
 focus_neighbor_top = NodePath("../MainMenuEoButton")
-focus_neighbor_bottom = NodePath("../MainMenuEoButton")
+focus_neighbor_bottom = NodePath("../SkipButton")
 text = "RETRY LEVEL"
+
+[node name="SkipButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../RetryEoButton")
+focus_neighbor_bottom = NodePath("../MainMenuEoButton")
+text = "SKIP LEVEL"
 
 [node name="MainMenuEoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
 layout_mode = 2
-focus_neighbor_top = NodePath("../RetryEoButton")
+focus_neighbor_top = NodePath("../SkipButton")
 focus_neighbor_bottom = NodePath("../RetryEoButton")
 text = "MAIN MENU"
 
@@ -636,6 +643,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("24_bghvs")
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_qeujh")
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/RetryEoButton" to="." method="_on_retry"]
