@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=10 format=3 uid="uid://cl3fmf51656su"]
 
-[ext_resource type="Texture2D" uid="uid://b3y0wmshjjunh" path="res://terrain/tiles.png" id="1_yho4p"]
-[ext_resource type="Texture2D" uid="uid://ddyet4g2tdaf2" path="res://terrain/grass.png" id="2_2q2kx"]
-[ext_resource type="Texture2D" uid="uid://bvr8ugyoibc11" path="res://terrain/generic_platformer_tiles.png" id="2_yho4p"]
-[ext_resource type="Texture2D" uid="uid://bt4bnc00ivkx7" path="res://terrain/dark_house_tiles.png" id="3_2q2kx"]
+[ext_resource type="Texture2D" uid="uid://b3y0wmshjjunh" path="res://Terrain/tiles.png" id="1_yho4p"]
+[ext_resource type="Texture2D" uid="uid://ddyet4g2tdaf2" path="res://Terrain/Grass.png" id="2_2q2kx"]
+[ext_resource type="Texture2D" uid="uid://bvr8ugyoibc11" path="res://Terrain/generic_platformer_tiles.png" id="2_yho4p"]
+[ext_resource type="Texture2D" uid="uid://bt4bnc00ivkx7" path="res://Terrain/dark_house_tiles.png" id="3_2q2kx"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27elj"]
 bounce = 0.2

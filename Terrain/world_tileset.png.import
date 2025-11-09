@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3rfqk6as4u01"
-path="res://.godot/imported/world_tileset.png-0927680f620977a2252b5501f8b8197c.ctex"
+path="res://.godot/imported/world_tileset.png-def54041f4e9cea96b48c2ea95ad1ce2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terrain/world_tileset.png"
-dest_files=["res://.godot/imported/world_tileset.png-0927680f620977a2252b5501f8b8197c.ctex"]
+source_file="res://Terrain/world_tileset.png"
+dest_files=["res://.godot/imported/world_tileset.png-def54041f4e9cea96b48c2ea95ad1ce2.ctex"]
 
 [params]
 
