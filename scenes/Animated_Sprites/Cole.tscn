@@ -553,9 +553,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("20_u2htp")
 
-[node name="EoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
+[node name="RetryEoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
 layout_mode = 2
+focus_neighbor_top = NodePath("../MainMenuEoButton")
+focus_neighbor_bottom = NodePath("../MainMenuEoButton")
 text = "RETRY LEVEL"
+
+[node name="MainMenuEoButton" parent="CanvasLayer/Lose/VBoxContainer" instance=ExtResource("21_5q4rg")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../RetryEoButton")
+focus_neighbor_bottom = NodePath("../RetryEoButton")
+text = "MAIN MENU"
 
 [node name="Win" type="Control" parent="CanvasLayer"]
 visible = false
@@ -598,9 +606,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("22_u2htp")
 
-[node name="EoButton" parent="CanvasLayer/Win/VBoxContainer" instance=ExtResource("21_5q4rg")]
+[node name="NextLevelEoButton" parent="CanvasLayer/Win/VBoxContainer" instance=ExtResource("21_5q4rg")]
 layout_mode = 2
+focus_neighbor_top = NodePath("../MainMenuEoButton")
+focus_neighbor_bottom = NodePath("../MainMenuEoButton")
 text = "NEXT LEVEL"
+
+[node name="MainMenuEoButton" parent="CanvasLayer/Win/VBoxContainer" instance=ExtResource("21_5q4rg")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../NextLevelEoButton")
+focus_neighbor_bottom = NodePath("../NextLevelEoButton")
+text = "MAIN MENU"
 
 [node name="Timer" type="RichTextLabel" parent="CanvasLayer"]
 anchors_preset = -1
@@ -622,5 +638,7 @@ script = ExtResource("24_bghvs")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/EoButton" to="." method="_on_retry"]
-[connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/EoButton" to="." method="_on_next_level"]
+[connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/RetryEoButton" to="." method="_on_retry"]
+[connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/MainMenuEoButton" to="." method="_on_main_menu_eo_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/NextLevelEoButton" to="." method="_on_next_level"]
+[connection signal="pressed" from="CanvasLayer/Win/VBoxContainer/MainMenuEoButton" to="." method="_on_main_menu_eo_button_pressed"]

@@ -23,7 +23,7 @@ func show_win(level):
 	G.SoundHelpers.play_async(self, G.WIN_SOUND)
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Win/VBoxContainer/RichTextLabel.set_random_text()
-	$CanvasLayer/Win/VBoxContainer/EoButton.grab_focus()
+	$CanvasLayer/Win/VBoxContainer/NextLevelEoButton.grab_focus()
 	$CanvasLayer/Timer.stop(true)
 	$CanvasLayer/Win.visible = true
 	nextLevel = level
@@ -31,7 +31,7 @@ func show_lose():
 	G.SoundHelpers.play_async(self, G.FAIL_SOUND)
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Lose/VBoxContainer/RichTextLabel.set_random_text()
-	$CanvasLayer/Lose/VBoxContainer/EoButton.grab_focus()
+	$CanvasLayer/Lose/VBoxContainer/RetryEoButton.grab_focus()
 	$CanvasLayer/Timer.stop(false)
 	$CanvasLayer/Lose.visible = true
 	
@@ -39,10 +39,13 @@ func calculate_relative_pos(v):
 	return v - $CharacterBody2D/Camera2D.global_position
 
 func _on_retry() -> void:
-	get_tree().reload_current_scene()
 	G.State.BlockInput = false
+	get_tree().reload_current_scene()
 
 func _on_next_level() -> void:
-	get_tree().change_scene_to_file(nextLevel)
 	G.State.BlockInput = false
-	pass # Replace with function body.
+	get_tree().change_scene_to_file(nextLevel)
+
+func _on_main_menu_eo_button_pressed() -> void:
+	G.State.BlockInput = false
+	get_tree().change_scene_to_file("res://scenes/title.tscn")
