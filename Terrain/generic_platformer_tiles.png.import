@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7qllrx8ksw5f"
-path="res://.godot/imported/Mossy - TileSet.png-68a4b50e33457aa76ee22d91fda30d4b.ctex"
+uid="uid://bvr8ugyoibc11"
+path="res://.godot/imported/generic_platformer_tiles.png-12e0626cc2895fd6841f294586a326a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Terrain/Mossy - TileSet.png"
-dest_files=["res://.godot/imported/Mossy - TileSet.png-68a4b50e33457aa76ee22d91fda30d4b.ctex"]
+source_file="res://Terrain/generic_platformer_tiles.png"
+dest_files=["res://.godot/imported/generic_platformer_tiles.png-12e0626cc2895fd6841f294586a326a5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc4whfjgeb6gh"
-path="res://.godot/imported/dash.png-dc737459deae05f02f3430dedca039ac.ctex"
+path="res://.godot/imported/dash.png-f30e2bbaf9df19759aed56b6b64180c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/female/olaf/base/dash.png"
-dest_files=["res://.godot/imported/dash.png-dc737459deae05f02f3430dedca039ac.ctex"]
+source_file="res://Sprites/female/olaf/base/dash.png"
+dest_files=["res://.godot/imported/dash.png-f30e2bbaf9df19759aed56b6b64180c4.ctex"]
 
 [params]
 
