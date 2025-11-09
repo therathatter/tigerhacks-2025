@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://crxpmuyasnygl"]
+[gd_scene load_steps=15 format=3 uid="uid://crxpmuyasnygl"]
 
 [ext_resource type="Shader" uid="uid://craq5doo4k1fc" path="res://shaders/blackhole.gdshader" id="2_3438a"]
 [ext_resource type="Script" uid="uid://b3bgo5stnp32e" path="res://scenes/intro_cutscene.gd" id="2_jusdg"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://b4tvinov2xk4b" path="res://scripts/blackhole.gd" id="5_dw6o5"]
 [ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="6_jusdg"]
 [ext_resource type="Script" uid="uid://8k3afthshy8k" path="res://scripts/texture_rect.gd" id="7_dcu1r"]
+[ext_resource type="AudioStream" uid="uid://d3weppkvid5xd" path="res://sounds/static.wav" id="8_dcu1r"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xeku4"]
 shader = ExtResource("2_3438a")
@@ -67,6 +68,33 @@ tracks/2/keys = {
 "args": [],
 "method": &"startSquiggling"
 }]
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("8_dcu1r")
+}],
+"times": PackedFloat32Array(3.5333333)
+}
+tracks/3/use_blend = true
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.5666666, 5.8333335, 5.9666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-20.0, -15.0, -80.0]
 }
 
 [sub_resource type="Animation" id="Animation_xeku4"]
@@ -159,3 +187,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -20.0
