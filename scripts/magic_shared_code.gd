@@ -13,6 +13,15 @@ const JUMP_SOUND = preload("res://sounds/jump.mp3")
 const FAIL_SOUND = preload("res://sounds/fail.mp3")
 const WIN_SOUND = preload("res://sounds/win.wav")
 
+const LEVELS = [ 
+	preload("res://scenes/levels/tutorial_level.tscn"),
+	preload("res://scenes/levels/level_1.tscn"),
+	preload("res://scenes/levels/level_2.tscn"),
+	preload("res://scenes/levels/level_3.tscn"),
+	preload("res://scenes/levels/level_4.tscn")  
+]
+
+
 class SoundHelpers:
 	static func play_async(parent, sound):
 		var music = AudioStreamPlayer.new()

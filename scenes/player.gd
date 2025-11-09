@@ -1,5 +1,6 @@
 extends Node2D
 
+var nextLevel = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	# Out of bounds
 	if calculate_relative_pos(self.position).y < -1000:
-		show_lose()
+		show_lose(nextLevel)
 
 func get_character_body():
 	return $Cole.get_character_body()
@@ -26,11 +27,11 @@ func show_win(level):
 	G.State.BlockInput = true
 	return $Cole.show_win(level)
 	
-func show_lose():
+func show_lose(level):
 	if G.State.BlockInput:
 		return
 	G.State.BlockInput = true
-	return $Cole.show_lose()
+	return $Cole.show_lose(level)
 	
 func calculate_relative_pos(v):
 	return $Cole.calculate_relative_pos(v)
