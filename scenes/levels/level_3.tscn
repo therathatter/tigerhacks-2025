@@ -46,7 +46,7 @@ height = 18.0
 size = Vector2(1801.6664, 51.666584)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwtda"]
-size = Vector2(39.583557, 7.6667175)
+size = Vector2(56.2502, 7.6667175)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3lf0c"]
 
@@ -118,7 +118,7 @@ tile_set = ExtResource("2_pimnq")
 
 [node name="WinBox" type="TileMapLayer" parent="PanelContainer"]
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AABfABkAAQAAAAUAAABfABoAAQAAAAUAAABfABsAAQAAAAYAAABgABkAAQABAAUAAABgABoAAQABAAUAAABgABsAAQABAAYAAABhABkAAQABAAUAAABhABoAAQABAAUAAABhABsAAQABAAYAAABiABkAAQABAAUAAABiABoAAQABAAUAAABiABsAAQABAAYAAABjABkAAQACAAUAAABjABoAAQACAAUAAABjABsAAQACAAYAAABfABgAAQAAAAUAAABgABgAAQABAAUAAABhABgAAQABAAUAAABiABgAAQABAAUAAABjABgAAQACAAUAAAA=")
+tile_map_data = PackedByteArray("AABfABkAAQAAAAUAAABfABoAAQAAAAUAAABfABsAAQAAAAYAAABgABkAAQABAAUAAABgABoAAQABAAUAAABgABsAAQABAAYAAABhABkAAQABAAUAAABhABoAAQABAAUAAABhABsAAQABAAYAAABiABkAAQABAAUAAABiABoAAQABAAUAAABiABsAAQABAAYAAABfABgAAQAAAAUAAABgABgAAQABAAUAAABhABgAAQABAAUAAABiABgAAQABAAUAAABkABgAAQACAAUAAABkABkAAQACAAUAAABkABoAAQACAAUAAABkABsAAQACAAYAAABjABsAAQABAAYAAAA=")
 tile_set = ExtResource("2_pimnq")
 
 [node name="Border" type="TileMapLayer" parent="PanelContainer"]
@@ -192,8 +192,8 @@ script = ExtResource("6_f6egh")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
-position = Vector2(695.6249, -393.94995)
-scale = Vector2(0.5999998, 0.5999998)
+position = Vector2(699.3749, -393.94995)
+scale = Vector2(0.59999967, 0.59999967)
 shape = SubResource("RectangleShape2D_mwtda")
 
 [node name="Player" parent="." instance=ExtResource("7_t4txi")]
