@@ -1,5 +1,6 @@
-[gd_scene load_steps=79 format=3 uid="uid://bay62e5awu436"]
+[gd_scene load_steps=83 format=3 uid="uid://bay62e5awu436"]
 
+[ext_resource type="Shader" uid="uid://craq5doo4k1fc" path="res://shaders/blackhole.gdshader" id="1_5q4rg"]
 [ext_resource type="Texture2D" uid="uid://obnnin5af44h" path="res://sprites/male/cole/base/avoid.png" id="1_ad0t4"]
 [ext_resource type="Script" uid="uid://dfobovt13clq7" path="res://scenes/Animated_Sprites/cole.gd" id="1_naklk"]
 [ext_resource type="Script" uid="uid://bm5k3q2prnn07" path="res://scenes/Animated_Sprites/character_body_2d.gd" id="1_y48p6"]
@@ -22,6 +23,15 @@
 [ext_resource type="Script" uid="uid://s6qbrtilfet7" path="res://scenes/rich_text_label.gd" id="20_u2htp"]
 [ext_resource type="PackedScene" uid="uid://cyla2onleadlb" path="res://scenes/eo_button.tscn" id="21_5q4rg"]
 [ext_resource type="Script" uid="uid://hkimvhy5nx88" path="res://scenes/Animated_Sprites/win_rich_text.gd" id="22_u2htp"]
+[ext_resource type="Script" uid="uid://dru3dnv5y4gc1" path="res://scenes/Animated_Sprites/timer.gd" id="24_bghvs"]
+[ext_resource type="FontFile" uid="uid://dlbwa55d4mbjj" path="res://fonts/whitrabt.ttf" id="24_w3boq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bghvs"]
+shader = ExtResource("1_5q4rg")
+shader_parameter/shaking = true
+shader_parameter/amplitude = 2.0
+shader_parameter/noise_scale = 20.0
+shader_parameter/noise_speed = 20.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqenr"]
 atlas = ExtResource("1_ad0t4")
@@ -466,12 +476,15 @@ animations = [{
 radius = 9.0
 
 [node name="Node2D2" type="Node2D"]
+material = SubResource("ShaderMaterial_bghvs")
 script = ExtResource("1_naklk")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+use_parent_material = true
 script = ExtResource("1_y48p6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+use_parent_material = true
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_luqd3")
 animation = &"Move"
@@ -588,6 +601,25 @@ script = ExtResource("22_u2htp")
 [node name="EoButton" parent="CanvasLayer/Win/VBoxContainer" instance=ExtResource("21_5q4rg")]
 layout_mode = 2
 text = "NEXT LEVEL"
+
+[node name="Timer" type="RichTextLabel" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.7118056
+anchor_top = 0.8148148
+anchor_right = 0.9826389
+anchor_bottom = 0.9382716
+offset_left = -20.0
+offset_right = -20.0
+theme_override_colors/default_color = Color(0.901428, 0.901428, 0.9014279, 1)
+theme_override_fonts/normal_font = ExtResource("24_w3boq")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "00:00:00"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("24_bghvs")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="pressed" from="CanvasLayer/Lose/VBoxContainer/EoButton" to="." method="_on_retry"]

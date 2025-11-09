@@ -1,5 +1,6 @@
 extends Node2D
 
+var finishedSpawnAnimation = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,6 +24,7 @@ func show_win(level):
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Win/VBoxContainer/RichTextLabel.set_random_text()
 	$CanvasLayer/Win/VBoxContainer/EoButton.grab_focus()
+	$CanvasLayer/Timer.stop(true)
 	$CanvasLayer/Win.visible = true
 	nextLevel = level
 func show_lose():
@@ -30,6 +32,7 @@ func show_lose():
 	$CanvasLayer.remove_child(get_kick_charge())
 	$CanvasLayer/Lose/VBoxContainer/RichTextLabel.set_random_text()
 	$CanvasLayer/Lose/VBoxContainer/EoButton.grab_focus()
+	$CanvasLayer/Timer.stop(false)
 	$CanvasLayer/Lose.visible = true
 	
 func calculate_relative_pos(v):
