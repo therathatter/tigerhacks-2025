@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1fh3ncixig57"
-path="res://.godot/imported/move.png-243728c75dc89715d907641da66aba96.ctex"
+path="res://.godot/imported/move.png-cb2a2284bcb8e0b746701942d1cde170.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/male/mort/egg/move.png"
-dest_files=["res://.godot/imported/move.png-243728c75dc89715d907641da66aba96.ctex"]
+source_file="res://Sprites/male/mort/egg/move.png"
+dest_files=["res://.godot/imported/move.png-cb2a2284bcb8e0b746701942d1cde170.ctex"]
 
 [params]
 
