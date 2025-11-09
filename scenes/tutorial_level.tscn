@@ -1882,6 +1882,7 @@ position = Vector2(-1, 0)
 shape = SubResource("SegmentShape2D_0phbf")
 
 [node name="MapsController" type="Node2D" parent="."]
+visible = false
 script = ExtResource("2_hpxl2")
 player_path = NodePath("../Player")
 tilemaps_path = NodePath("../TilemapsContainer")

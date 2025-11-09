@@ -1,12 +1,11 @@
-[gd_scene load_steps=22 format=4 uid="uid://pbeevnd7xyk4"]
+[gd_scene load_steps=21 format=4 uid="uid://b6bp0h0ucsuos"]
 
 [ext_resource type="PackedScene" uid="uid://daheyntuuu013" path="res://scenes/space_background.tscn" id="1_2yamv"]
 [ext_resource type="TileSet" uid="uid://cl3fmf51656su" path="res://tileset/maptiles.tres" id="1_d67h8"]
 [ext_resource type="Script" uid="uid://cqdx1nbp1fbug" path="res://scripts/maps_controller.gd" id="2_sg86v"]
 [ext_resource type="Script" uid="uid://sbxyh02fty1g" path="res://scripts/tilemaps_container.gd" id="3_bqc8u"]
-[ext_resource type="Texture2D" uid="uid://dogfq51a2jq61" path="res://Sprites/female/cole/egg/test.tres" id="4_2yamv"]
-[ext_resource type="PackedScene" uid="uid://dioqqf824b1ie" path="res://scenes/kick_charge.tscn" id="5_2468p"]
-[ext_resource type="Script" path="res://scripts/box_area.gd" id="6_3lf0c"]
+[ext_resource type="Texture2D" path="res://Sprites/female/cole/egg/test.tres" id="4_2yamv"]
+[ext_resource type="Script" uid="uid://dgsvy22o8bo0m" path="res://scripts/box_area.gd" id="6_3lf0c"]
 [ext_resource type="PackedScene" uid="uid://ftywjr8fuk37" path="res://scenes/player.tscn" id="7_35uj7"]
 [ext_resource type="Texture2D" uid="uid://d3lf4to6fljpp" path="res://Terrain/platforms.png" id="9_2468p"]
 
@@ -149,7 +148,6 @@ tile_set = ExtResource("1_d67h8")
 [node name="MapsController" type="Node2D" parent="."]
 scale = Vector2(0.6, 0.6)
 script = ExtResource("2_sg86v")
-kick_charge_path = NodePath("../CanvasLayer/KickCharge")
 player_path = NodePath("../Player")
 tilemaps_path = NodePath("../TilemapsContainer")
 metadata/_custom_type_script = "uid://cqdx1nbp1fbug"
@@ -173,21 +171,6 @@ tile_set = SubResource("TileSet_unsrw")
 position = Vector2(229, -347)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("CapsuleShape2D_er3ew")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="KickCharge" parent="CanvasLayer" instance=ExtResource("5_2468p")]
-anchors_preset = -1
-anchor_left = 0.041666668
-anchor_top = 0.80246913
-anchor_right = 0.35416666
-anchor_bottom = 0.9259259
-offset_right = 0.0
-offset_bottom = 0.0
-grow_vertical = 0
-scale = Vector2(1, 1)
-alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="BoxArea" type="Area2D" parent="."]
 position = Vector2(23, 171)
