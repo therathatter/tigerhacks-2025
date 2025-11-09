@@ -35,15 +35,26 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if not kick_charge or not player_node or not tilemaps_container:
 		return
-	for tilemap in tilemaps_container.get_children():
-		if tilemap is not TileMapLayer:
+	for tilebody in tilemaps_container.get_children():
+		if tilebody is not RigidBody2D:
 			continue
-		if not kick_charge.charging:
-			var direction = (tilemap.position - player_node.position).normalized()
-			tilemap.position += direction * delta * kick_charge.dt_charge * 50 #draw straight line to tilemap, move the whole tilemap by dt_charge * 50 in that direction
+		if not kick_charge.charging and kick_charge.dt_charge > 0:
+			var camera = player_node.get_child(2)
+			var tile_relpos = tilebody.global_position - camera.global_position
+			
+			tilebody.angular_damp = 2.0
+			tilebody.gravity_scale = 0.15
+			
+			var direction =  camera.global_position.direction_to(tile_relpos)#(tilemap_center - player_center) #/ 50#.normalized()'
+			#print(direction)
+			#print('tilemap pos:', tile_relpos)
+			#print('player pos:', camera.global_position)
+			tilebody.apply_impulse(direction * 5)
+			#tilebody.apply_force(direction * delta * kick_charge.dt_charge*5000, tile_relpos)
+			#tilebody.position += direction * (delta * kick_charge.dt_charge * 50) #draw straight line to tilemap, move the whole tilemap by dt_charge * 50 in that direction
 
 			
 	

@@ -11,7 +11,7 @@
 [ext_resource type="StyleBox" uid="uid://cggdq6xhd65ui" path="res://theme/button_red.tres" id="9_agqj7"]
 [ext_resource type="Script" uid="uid://bwa8bp8vvy76e" path="res://scripts/back_button.gd" id="10_7lgdl"]
 [ext_resource type="FontFile" uid="uid://cx604kg8cd6vr" path="res://fonts/SpaceMono-Regular.ttf" id="11_c6kru"]
-[ext_resource type="Script" uid="uid://nrv1cv2hsbkj" path="res://scenes/rich_text_label.gd" id="12_qbfqv"]
+[ext_resource type="Script" uid="uid://nrv1cv2hsbkj" path="res://scripts/rich_text_label.gd" id="12_qbfqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e4uir"]
 atlas = ExtResource("4_x5q3x")
