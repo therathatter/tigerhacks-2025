@@ -42,7 +42,7 @@ radius = 8.0
 height = 18.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwtda"]
-size = Vector2(30.5, 32)
+size = Vector2(39.583557, 7.6667175)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3lf0c"]
 
@@ -179,8 +179,8 @@ script = ExtResource("6_f6egh")
 egg_rigidbody_path = NodePath("../TilemapsContainer/RigidBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxArea"]
-position = Vector2(696.25, -405)
-scale = Vector2(0.6, 0.6)
+position = Vector2(695.6249, -393.94995)
+scale = Vector2(0.5999998, 0.5999998)
 shape = SubResource("RectangleShape2D_mwtda")
 
 [node name="Player" parent="." instance=ExtResource("7_t4txi")]
