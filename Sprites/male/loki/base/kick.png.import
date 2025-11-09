@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfqnxp2p7gwq2"
-path="res://.godot/imported/kick.png-7f8f3bb286594a4d090e132950024475.ctex"
+path="res://.godot/imported/kick.png-e03f5f97908286584350d223b5bf2d72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/male/loki/base/kick.png"
-dest_files=["res://.godot/imported/kick.png-7f8f3bb286594a4d090e132950024475.ctex"]
+source_file="res://Sprites/male/loki/base/kick.png"
+dest_files=["res://.godot/imported/kick.png-e03f5f97908286584350d223b5bf2d72.ctex"]
 
 [params]
 
