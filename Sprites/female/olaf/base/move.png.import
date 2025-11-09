@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2inwdo5t4okq"
-path="res://.godot/imported/move.png-ddf12c54c1d1365bbc51256dabfbe124.ctex"
+path="res://.godot/imported/move.png-72b78245ae4c3113ad86a71eed5bc9e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/female/olaf/base/move.png"
-dest_files=["res://.godot/imported/move.png-ddf12c54c1d1365bbc51256dabfbe124.ctex"]
+source_file="res://sprites/female/olaf/base/move.png"
+dest_files=["res://.godot/imported/move.png-72b78245ae4c3113ad86a71eed5bc9e8.ctex"]
 
 [params]
 
