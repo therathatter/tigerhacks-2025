@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7qllrx8ksw5f"
-path="res://.godot/imported/Mossy - TileSet.png-68a4b50e33457aa76ee22d91fda30d4b.ctex"
+uid="uid://ly8kh6dtbigw"
+path="res://.godot/imported/Sprite sheet.png-69fa62a8d6eb5639c88fbb4a39913c22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Terrain/Mossy - TileSet.png"
-dest_files=["res://.godot/imported/Mossy - TileSet.png-68a4b50e33457aa76ee22d91fda30d4b.ctex"]
+source_file="res://Terrain/Sprite sheet.png"
+dest_files=["res://.godot/imported/Sprite sheet.png-69fa62a8d6eb5639c88fbb4a39913c22.ctex"]
 
 [params]
 

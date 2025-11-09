@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sp0d6r54jyn4"
-path="res://.godot/imported/jump.png-fb19ac97d422d41f5ddc92802e5665a7.ctex"
+path="res://.godot/imported/jump.png-f2f15ab14a421c7a7c4ec17a6bcc02ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/male/loki/base/jump.png"
-dest_files=["res://.godot/imported/jump.png-fb19ac97d422d41f5ddc92802e5665a7.ctex"]
+source_file="res://Sprites/male/loki/base/jump.png"
+dest_files=["res://.godot/imported/jump.png-f2f15ab14a421c7a7c4ec17a6bcc02ae.ctex"]
 
 [params]
 
