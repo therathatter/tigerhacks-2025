@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dy2aatsnpdcxq" path="res://sprites/male/cole/base/dead.png" id="8_w65of"]
 [ext_resource type="Script" uid="uid://bsrjmddqeuv0x" path="res://scripts/play_button.gd" id="10_ygloa"]
 [ext_resource type="Script" uid="uid://ygqbm37ak7m7" path="res://scripts/credits_button.gd" id="11_6civk"]
-[ext_resource type="AudioStream" uid="uid://c2beflopla4ip" path="res://sounds/title.wav" id="11_ygloa"]
+[ext_resource type="AudioStream" uid="uid://5yjw7bvu1wmq" path="res://sounds/title.mp3" id="11_ygloa"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7lgly"]
 

@@ -159,3 +159,7 @@ metadata/_edit_use_anchors_ = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_nmdnh")
 autoplay = true
+
+[connection signal="focus_entered" from="Buttons/BackButton" to="." method="_on_back_button_focus_entered"]
+[connection signal="mouse_entered" from="Buttons/BackButton" to="Logo" method="_on_back_button_mouse_entered"]
+[connection signal="pressed" from="Buttons/BackButton" to="." method="_on_back_button_pressed"]

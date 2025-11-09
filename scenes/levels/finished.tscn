@@ -12,7 +12,7 @@
 [ext_resource type="Script" uid="uid://bwa8bp8vvy76e" path="res://scripts/back_button.gd" id="10_maxf1"]
 [ext_resource type="FontFile" uid="uid://cx604kg8cd6vr" path="res://fonts/SpaceMono-Regular.ttf" id="11_en3ij"]
 [ext_resource type="Script" uid="uid://nrv1cv2hsbkj" path="res://scripts/rich_text_label.gd" id="12_lpp02"]
-[ext_resource type="AudioStream" uid="uid://c2beflopla4ip" path="res://sounds/title.wav" id="13_j5x54"]
+[ext_resource type="AudioStream" uid="uid://5yjw7bvu1wmq" path="res://sounds/title.mp3" id="13_j5x54"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0cr7y"]
 atlas = ExtResource("4_6cf3o")
@@ -154,3 +154,7 @@ metadata/_edit_use_anchors_ = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_j5x54")
 autoplay = true
+
+[connection signal="focus_entered" from="Buttons/BackButton" to="Logo" method="_on_back_button_focus_entered"]
+[connection signal="mouse_entered" from="Buttons/BackButton" to="Logo" method="_on_back_button_mouse_entered"]
+[connection signal="pressed" from="Buttons/BackButton" to="Logo" method="_on_back_button_pressed"]
